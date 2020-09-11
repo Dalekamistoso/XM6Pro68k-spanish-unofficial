@@ -1,0 +1,1552 @@
+=============== ATENCIÓN =============================================================
+
+* Este texto lo he pasado por un traductor online (por cuestiones de tiempo y salud)
+
+* Considéralo experimental y una traducción sin terminar adecuadamente.
+
+* Puede contener algunos errores pues he cambiado hotkeys en algunos de los submenús
+  para adaptarlas al español pero no las globales (lo mismo no afecta al manual).
+  
+* Se han traducido sólo componentes que pueden reimportarse en el binario con futuras
+  versiones, tengo previsto hacer mejoras si tiene aceptación.
+
+* Si quieres echarme una mano contacta con Dalekamistoso en twitter.
+
+* El texto no está ajustado del todo por la misma razón antes mencionada.
+
+=============== ATENCIÓN =============================================================
+
+
+Referencia de la interfaz de usuario
+------------------------------------------------------------------------
+
+Esto no pretende ser una lista exhaustiva, aunque viene
+bastante cerca. Se originó como un medio para rastrear combinaciones de teclas
+que ya estaban en uso. La mayor área de deficiencia es la
+manejo de entrada especial para subventanas que no uso mucho.
+
+Las combinaciones de teclas marcadas como "alternativa" normalmente no aparecen en la lista
+en los menús y es más probable que se sustituyan o eliminen
+en el futuro si es necesario. "Pseudo combinaciones" significan que el
+clave calificador es innecesario e ignorado, pero la combinación
+sigue en la lista, ya que la mayoría de las personas están acostumbradas a escribir, por ejemplo,
+Control-C para operaciones de copia.
+
+Muchos de estos requieren que la opción ventanas de estilo emergente se habilite
+(que ahora es el valor predeterminado). Se puede encontrar en la pestaña Miscelánea en
+el cuadro de diálogo de opciones (accesible pulsando Alt-O).
+
+Algunos accesos directos solo funcionarán mientras se detiene la emulación. En la mayoría de los casos
+esto se hace para evitar el envío de pulsaciones de teclas no deseadas al X68000 virtual.
+Las combinaciones que utilizan la tecla Alt se utilizaron en gran medida porque el X68000
+carece de esa llave en particular. Para invocar combinaciones que impliquen la tecla Alt,
+Presione primero la tecla Alt para evitar el envío de entradas externas al X68000.
+
+Interfaz de menú
+
+Manteniendo pulsada la tecla Suprimir mientras se selecciona un elemento de un menú MRU
+(el historial de archivos usados) eliminará ese elemento del menú.
+También se eliminarán si el archivo al que se hace referencia ya no existe.
+El mismo principio se aplica a la interfaz del menú de trucos y a la
+menú de ventana poco utilizado.
+
+Control de retención mientras selecciona un elemento en el menú de trucos
+abrirá el cuadro de diálogo utilizado para editar el truco seleccionado.
+
+Manteniendo pulsada la tecla Mayúsculas mientras se selecciona un elemento de un menú MRU de disquete
+hará que la imagen de disco se inserte en la otra unidad.
+Manteniendo presionado Control insertará la imagen de disco en ambas unidades.
+
+Accesos directos generales
+
+Alt-0-> Accede al menú de la disquetera 0
+Alt-1-> Accede al menú de la disquetera 1
+Alt-A-> Guardar archivo de estado como...
+Alt-B-> Romper / Ejecutar (suplente)
+Alt-C-> Acceso al menú de CD-ROM
+Alt-D-> Acceso al menú de depuración 
+Alt-E-> Expulsar disco en disquetera 0
+Alt-Shift-E-> Expulsar disco en disquetera 1
+Alt-Ctrl-E-> Expulsar discos en todas las disqueteras
+Alt-G-> Habilitar modo juego
+Alt-Shift-G->Habilitar modo de juego (con diferencias en la asignación)
+Alt-H-> Menú de ayuda
+Alt-I-> (Re)insertar el disco más reciente y los medios avanzados disquetera 0
+Alt-Shift-I-> (Re)insertar el disco más reciente y los medios avanzados disquetera 1
+Alt-Ctrl-I-> (Re)insertar el disco más reciente en disqueteras 0 y 1
+Alt-J-> Alternar emulación del controlador de teclado
+Alt-K-> Abrir/Cerrar teclado de software
+Alt-Shift-K-> Abrir/Cerrar teclado de software y reubicarlo
+Alt-L-> Cargar el archivo de estado más reciente
+Alt-Shift-L-> Cargar el segundo archivo de estado más reciente
+Alt-Ctrl-L-> Cargar un archivo de estado arbitrario
+Alt-M-> Menú de unidad magneto-óptica
+Alt-N Ver -> Procesador -> Todo (alternativo)
+Alt-O-> Opciones 
+Alt-P-> Alternar modo de alta prioridad
+Alt-Q-> Captura de pantalla rápida (numerada secuencialmente)
+Alt-R-> Reiniciar emulación
+Alt-Shift-R-> Reiniciar emulación y borrar la memoria
+Alt-Shift-S-> Guardar estado en archivo de estado activo
+Alt-S-> Salvado rápido (numerado secuencialmente)
+Alt-T-> Menú de herramientas Access Tools
+Alt-U-> (sin usar)
+Alt-V-> Menú de vista
+Alt-W-> Menú de ventanas
+Alt-X-> Salir del emulador
+Alt-Y-> Búsqueda de memoria dinámica 
+Alt-Z-> (sin usar)
+
+NOTA: 
+
+Los accesos directos integrales enumerados anteriormente que acceden a un menú 
+de ventana sólo están disponibles cuando la ventana está activa y el menú está 
+habilitado.
+
+F1 Abra este archivo de referencia (cuando se detenga)
+F5 Ejecutar (cuando se detiene) (alternativo)
+F6 La misma función que Tab (ver más abajo) (cuando se detiene)
+F9 Alternar punto de interrupción (una ventana de desmontaje debe estar abierta)
+F10 Menú abierto de la ventana activa
+F10 Paso sobre la siguiente instrucción (cuando se detiene)
+F11 (normalmente asignado a la tecla F10 del  X68000 cuando se ejecuta)
+F11 Ejecutar la siguiente instrucción (cuando se detiene)
+F12 Tecla X68000 definida por el usuario o alternar modo de ratón (cuando se ejecuta)
+F12 Saltar por delante (cuando se detiene)
+Ctrl-F10 Ejecutar al cursor (una ventana de desensamblado debe estar abierta)
+Ctrl-F11 Ejecutar hasta el final de la subrutina (cuando se detiene)
+Ctrl-F12 (reservado) (cuando se detiene)
+Mayúsculas-F9 Alternar el estado de activación de un punto de interrupción
+Shift-F10 Abrir menú emergente de la ventana activa
+Mayúsculas-F10 Ejecutar a la siguiente instrucción (cuando se detiene)
+Mayúsculas -F11 Paso a paso (cuando se detiene)
+Mayúsculas-F12 Ejecutar siguiente instrucción (cuando se detiene) (alternativa)
+Alt-F1 Abra este archivo de referencia
+Alt-F4 Cerrar ventana activa / Programa (tecla de acceso rápido del sistema)
+Alt-F5 Romper / Ejecutar (suplente)
+Alt-F6 No funciona según lo previsto (tecla de acceso rápido del sistema) (hasta Windows XP)
+Alt-F11 Ver -> Procesador -> Todo
+Alt-F12 Break / Ejecutar
+Alt-Pausa/Romper rotura / Ejecutar
+Tecla 0 del teclado numérico / Ins Avanza fotograma (cuando se detiene)
+Alt-PageDown Cambiar entre las ventanas
+Alt-PageUp Cambiar entre en orden inverso
+Ciclo de pestañas a través de las ventanas (cuando se detiene)
+Desplazamiento y tabulación Ciclo a través de las ventanas (cuando se detiene, orden inverso)
+Ctrl-Tab Activar ventana de marco (cuando se detiene)
+Ctrl-PageDown Ciclo a través de las ventanas (cuando se detiene)
+Ctrl-PageUp Ciclo a través de las ventanas (cuando se detiene, orden inverso)
+Alt-Space Abrir menú del sistema de la ventana activa (tecla de acceso rápido del sistema)
+Alt-Enter Alternar modo de pantalla completa
+' (grave) Limitación de velocidad de palanca (misma tecla que la tilde) (en ejecución) (*)
+' (comilla simple) limitación de velocidad (misma tecla que la tilde) (detenido)
+Control derecho Tecla X68000 definida por el usuario o igual que Control izquierdo
+
+* Se comporta como un momentáneo o alternar dependiendo de cuánto tiempo se presiona la tecla. La funcionalidad se deshabilitará si el usuario asigna la clave.
+
+Ajustes de estiramiento de cambio de rueda del ratón / modo (la ventana de marco debe estar activa) (*)
+Botón central Alterna de modo de ratón (cuando se ejecuta) (**)
+Botón central (sin asignar) (cuando se detiene)
+
+* Los efectos varían considerablemente. Consulte la sección "Referencia de opciones (gráficos)".
+** Esta función se puede desactivar en la pestaña Ratón del cuadro de diálogo Opciones.
+
+Ventana de desensamblado (la mayoría de estos requieren ventanas emergentes activas)
+Una dirección actual de copia al portapapeles
+C Copiar desmontaje al portapapeles
+Ctrl-C Copiar desmontaje al portapapeles (pseudo combinación)
+Mayúsculas-C Copiar desmontaje al portapapeles (solo una línea)
+G Ir a la dirección
+Ctrl-J Establecer 68000 PC a la línea superior de desmontaje
+O Alternar el punto de interrupción de un solo disparo en la línea actual
+P Desplazamiento de la vista de desmontaje al PC actual
+Ingrese paso sobre la siguiente instrucción (alternativa)
+Ctrl-Introducir ejecución al cursor (alternativa)
+Mayúsculas-Introducir ejecución a la siguiente instrucción (alternativa)
+Plus (numpad) Ejecutar la siguiente instrucción (alternativa)
+Ctrl-Plus Ejecutar hasta el final de la subrutina (alternativa)
+Shift-Plus Step out (alternativo)
+Menos (numpad) Salir (alternativo)
+Asterisco (pad) Ejecutar al cursor (alternativo)
+Derecha/Alt-Derecha Navegar a la dirección del operando en la línea superior
+Ctrl-Derecha Navegar a la dirección del segundo operando en la línea superior
+Izquierda/Alt-Izquierda Volver (utiliza una pila de direcciones interna)
+
+F4 Cerrar ventana
+Alt-F4 Cerrar ventana (pseudo combinación)
+Ctrl-F4 Cerrar ventana (pseudo combinación)
+
+Desplazamiento arriba/abajo por líneas
+Ctrl-Arriba/Abajo Desplazarse por palabras (*) (Mayús o Ctrl-Shift también funcionarán)
+Página arriba/abajo Desplazarse por páginas
+Espacio/Retroceso Scroll por páginas
+Inicio/Fin Saltar a la parte superior/inferior
+Pausa/Interrupción Alternar el estado de ejecución de la CPU
+' (grave) Limitación de velocidad de palanca (misma tecla que la tilde)
+
+Desplazamiento de la rueda del ratón por líneas
+Ctrl-Rueda Scroll por páginas
+Desplazamiento de la rueda mayús por páginas (alternativa)
+Ctrl-Shift-Whl Scroll por palabras (*)
+
+* Es decir, dos bytes en la memoria. Es útil en situaciones problemáticas
+ como instrucciones que se enmascaran con la basura anterior.
+
+RMB Abrir menú contextual
+ Siga Operando Saltar al operando en línea en la que se hizo clic con el botón derecho
+ Saltar a Cursor Set PC a línea seleccionada por el ratón (presione Alt-J para deshacer)
+
+LMB Set / Remove Breakpoint
+Shift-LMB Activar / Desactivar punto de interrupción
+Ctrl-LMB Establecer un punto de interrupción de un solo disparo
+Ctrl-Shift-LMB Ejecutar al cursor (*)
+
+* Esto funciona configurando / moviendo un punto de interrupción especial de un solo disparo (#9)
+ que está reservado exclusivamente para este tipo de propósitos.
+
+ Ventana de puntos de interrupción (las entradas del teclado requieren la configuración de estilo emergente)
+
+A / Ctrl-C Copiar la dirección del punto de interrupción superior al portapapeles
+Mayúsculas- Una dirección de copia del punto de interrupción inferior al portapapeles
+Ctrl-V Establecer punto de interrupción utilizando una dirección del portapapeles
+E/ Introducir una dirección de punto de interrupción manualmente
+Eliminar Eliminar un punto de interrupción (desde la parte superior)
+Retroceso Eliminar un punto de interrupción (desde la parte inferior)
+Mayúsculas - Eliminar eliminar todos los puntos de interrupción
+Mayúsculas-Retroceso Eliminar todos los puntos de interrupción
+
+Doble LMB Alternar un punto de interrupción
+ con Ctrl Alternar todos los puntos de interrupción
+ con La dirección del punto de interrupción De cambio cambiar
+
+Tenga en cuenta que se resaltará un punto de interrupción que coincida con el PC actual.
+
+Ventana de memoria (la mayoría de estos requieren ventanas emergentes activas)
+
+Una dirección actual de copia al portapapeles
+F Abrir diálogo de búsqueda
+G Ir a la dirección
+M Alternar el modo de búsqueda de memoria dinámica
+
+B Cambiar unidades de visualización (byte)
+L Cambiar unidades de visualización (largo)
+W Cambiar unidades de visualización (palabra)
+
+F3 Repetir la última búsqueda
+Mayúsculas + F3 Repetir la última búsqueda (hacia atrás)
+
+F4 Cerrar ventana
+Alt-F4 Cerrar ventana (pseudo combinación)
+Ctrl-F4 Cerrar ventana (pseudo combinación)
+
+Izquierda/Derecha Navegar por el historial de vistas de la ventana de memoria
+Desplazamiento arriba/abajo por líneas
+Página arriba/abajo Desplazarse por páginas
+Espacio/Retroceso Scroll por páginas
+Inicio/Fin Saltar a la parte superior/inferior
+Pausa/Interrupción Alternar el estado de ejecución de la CPU
+' (grave) Limitación de velocidad de palanca (misma tecla que la tilde)
+
+Desplazamiento de la rueda del ratón por líneas
+Ctrl-Rueda Scroll por páginas
+Desplazamiento de la rueda mayús por páginas (alternativa)
+Ctrl-Shift-Whl Saltar a la parte superior/inferior
+
+Introducir editar el valor seleccionado
+
+Double LMB Editar valor de memoria (también útil para copiar valores)
+ con Ctrl Jump para abordar almacenado en la ubicación de la memoria
+
+Diálogo de búsqueda
+
+Escape / Alt-F4 Cierre la ventana
+Control Cerrar la ventana después de buscar (mientras se activa una búsqueda)
+Mayús Invertir la dirección de búsqueda (mientras se activa una búsqueda)
+
+Diálogo Opciones
+
+Ctrl-PgUp/PgDwn Cambiar a la siguiente / pestaña anterior
+Introducir / Volver Aplicar los cambios realizados en cada pestaña y cerrar el cuadro de diálogo
+Escape Cancelar todos los cambios
+
+Búsqueda dinámica de memoria
+
+La mayoría de las teclas utilizadas por la ventana de memoria también se aplican en este modo.
+¡Las claves entre paréntesis no son oficiales y pueden ser reasignadas!
+El símbolo '' significa que el control debe mantenerse presionado. "Dbl" significa doble clic.
+
+Pausa Alternar el estado de ejecución de la CPU
+• Establezca el radio de entrada predeterminado en 10 (es decir, la entrada se interpreta como decimal)
+$ Establecer el radio de entrada predeterminado en 16 (es decir, la entrada se interpreta como hexadecimal)
+¿H?	Ver ayuda integrada para esta función
+M (Q) Alternar el modo de búsqueda dinámica de memoria
+R Alternar la función de ejecución después de la búsqueda
+V (5) Alternar el modo de visualización entre compacto y completo
+U Actualizar copia de RAM (valores anteriores)
+U (T) Alternar la actualización automática de la copia de RAM después de búsquedas relativas
+X Interruptor de radio de entrada predeterminado entre 10 y 16
+Z Deshacer (sólo un nivel guardado) (dos veces para rehacer) (no actualiza la copia de RAM)
+F1 Abrir manual de referencia
+F3 Repetir búsqueda anterior
+Space Repetir búsqueda anterior
+Backspc Iniciar una nueva búsqueda
+Introducir Modificar el valor almacenado en la línea actual
+•Introducir Añadir un truco usando la dirección en la línea actual
+Dbl-LMB Modificar el valor almacenado en la dirección de destino
+•DblLMB Añadir un truco usando la dirección de destino
+
+
+En comparación con el estado anterior:
+
+I Aumentado (numpad '/' es un suplente)
+D Disminución
++ Incrementado
+- Decrementado
+Y Cambiado por...
+C (*) Cambiado
+S Same
+
+En comparación con un valor específico:
+
+0 (P) Firmado > 0 Eliminar ceros y valores negativos (valores con conjunto de bits de signo)
+E - Igual
+  ! (N) No es igual (no muy útil más allá de unos pocos valores comunes como 0 o FF)
+ [ > Desigualdad sin signo (excepto cero en cuyo caso se firmará)
+	 Usar Control para <y>y Alt para firmado (y Mayús es opcional)
+
+Lo siguiente restringe directamente las direcciones que se observan:
+
+[ ] Rango de direcciones inclusivo (mantenga pulsada la tecla Mayús y/o Control para exclusivas)
+( ) Rango de direcciones exclusivo
+ • Ver sólo una dirección especificada (borra todo y luego restaura una dirección)
+ & Ins Restaurar una dirección previamente eliminada
+
+Eliminar Eliminar la dirección superior
+Ctr-Del Eliminar una dirección arbitraria
+Shf-Del Eliminar todas las direcciones de la línea actual en adelante (no compatible con numlock)
+Alt-Del Eliminar todas las direcciones
+Shf-BS Eliminar todas las direcciones antes de la línea actual
+
+Combos útiles
+
+Alt-F, 1 Cargar el archivo de estado más reciente (Alt-L también funciona)
+Alt-F, S Guardar en el archivo de estado actual (Alt-Shift-S también funciona)
+Alt-I, Alt-R Recargar disquete en Drive 0 y restablecer el sistema
+Alt-T, U Alternar silenciamiento de audio
+
+Combos útiles - Ventana de desmontaje
+
+G, Ingrese Añadir línea actual para abordar el historial
+Derecha, A, Izquierda Copiar dirección de destino de la instrucción actual
+
+Recuerda: Si no hay un acelerador para un atajo que te gustaría,
+ por lo general se puede obtener el mismo efecto con unas pocas pulsaciones de teclas adicionales por
+ utilizando la tecla Alt o APPS para acceder a un menú y, a continuación, pulsando la tecla
+ correspondiente al comando que desee (la clave debe subrayarse.)
+
+Arrastrar y soltar:
+
+Casi cualquier archivo que puede cargar se puede arrastrar y soltar en la ventana principal.
+Puede colocar disquetes, archivos de estado, discos duros, archivos de disquete y discos MO.
+Incluso puede soltar directorios, que se convertirán en disquetes creados dinámicamente.
+
+(Aunque la implementación es diferente, también es posible arrastrar
+y coloque archivos en el ejecutable XM6 o un acceso directo al ejecutable.
+Consulte la siguiente sección para obtener más detalles.)
+
+Puede soltar archivos de diferentes tipos simultáneamente. Por ejemplo, podría
+soltar tanto un disco duro que contiene un juego instalado y su correspondiente arranque
+disco al mismo tiempo. También puede soltar un archivo de estado configurado para un
+configuración junto con las imágenes de disco que desea utilizar.
+
+Para una sola imagen de disquete, la unidad de destino está determinada por
+de qué lado de la ventana se deja caer. Si se quita un solo archivo
+en la barra de estado, el panel más cercano determina la unidad a utilizar,
+incluyendo las unidades 2 y 3.
+
+Múltiples imágenes de disco caídas se cargarán en unidades secuencialmente,
+a partir de la unidad 0. El sistema también se restablecerá automáticamente.
+
+Puede desactivar la función de restablecimiento manteniendo presionado Control. Mantener el cambio
+cambia el orden si hay varios disquetes, o invierte la unidad
+utilizar (basado en el lado de la ventana) si solo hay un disquete.
+
+Mantener presionada la tecla Alt hará que se inserte el mismo archivo (solo disquetes)
+en ambas unidades. Esto es más útil para archivos de varias imágenes (como
+.zip) donde la segunda unidad recibirá automáticamente el
+segunda imagen contenida en el archivo.
+
+Para los archivos que no son disquetes, la ubicación de colocación y los estados de tecla Alt/Shift
+no importa.
+
+Las imágenes del disco duro se conectarán a la interfaz correcta,
+posiblemente reemplazar un disco duro existente en la configuración del sistema.
+El sistema se configurará para utilizar la nueva unidad y, a continuación, se restablecerá.
+Puede inhibir el reinicio automático con la tecla Control. Debes tener
+archivos ROM adecuados para utilizar unidades SCSI.
+
+Argumentos de línea de comandos:
+
+XM6 acepta argumentos de línea de comandos, que serán examinados heurísticamente
+para determinar su tipo. Disquetes, archivos de estado, discos duros y discos MO
+se pueden cargar a través de este método. El término "disquete" incluye archivos
+(es decir, archivos .zip) y directorios (que se convierten en imágenes de disco dinámicamente).
+Es permisible mezclar diferentes tipos de archivos, como discos duros y
+Disquetes. XM6 puede reorganizar el orden de carga cuando aparecen varios tipos.
+
+Tenga en cuenta que arrastrar y soltar archivos en el ejecutable, o un acceso directo
+al ejecutable (incluyendo en la barra de herramientas Inicio rápido) causará
+archivos que se pasarán como argumentos a través de la interfaz de línea de comandos. Igualmente
+se aplica a los archivos pasados mediante el menú Enviar a o a través de asociaciones de archivos.
+
+Si otra instancia de XM6 ya se está ejecutando, los argumentos de la CLI
+pasado a esa instancia en su lugar, y la instancia más reciente terminará.
+Por lo tanto, no importa mucho si el programa ya se está ejecutando.
+Las rutas relativas se convertirán en absolutas a menos que la ruta de acceso no sea válida.
+Se producirá un error al pasar argumentos entre las versiones Unicode y MBCS de XM6.
+
+Los disquetes se cargarán en unidades de disquete secuencialmente a menos que Shift
+se deprime cuando se analizan los argumentos. Shift intercambiará el
+orden de los dos primeros disquetes o inserte un solo disco en la unidad 1.
+Si Alt está presionado, se insertará un solo disquete en ambas unidades.
+
+Si las dos primeras unidades de disquete se suministran con el mismo archivo, ya sea por
+presentar la misma ruta de archivo dos veces o manteniendo alt como se describió anteriormente,
+y el archivo contiene varias imágenes de disco (a partir de un archivo) y luego el
+segunda unidad recibirá automáticamente la segunda imagen del conjunto.
+
+Ciertos tipos de archivos pasados a través de esta interfaz harán que XM6 se restablezca,
+como proporcionará dos o más argumentos de disquete. La función de restablecimiento
+puede ser inhibido manteniendo presionada la tecla Control.
+
+Los argumentos que comienzan con un guión o una barra inclinada están sujetos a
+interpretación como se describe a continuación. (Se omite la capitalización.)
+
+/Salir hace que XM6 renuncie
+    /Reset hace que XM6 se restablezca a menos que se prohíba lo contrario
+  /NoReset prohíbe cualquier restablecimiento iniciado por la ronda actual de la CLI
+/FullReset igual que invocar Reset y Clear desde el menú
+
+Teclado de software:
+
+XM6 tiene un potente teclado virtual que se puede operar con el ratón.
+Simplemente apunte y haga clic en una tecla en particular para simular una pulsación de teclado.
+
+Puede utilizar el botón derecho del ratón para marcar una o más teclas como
+retenido. Esto es útil para situaciones en las que ciertos efectos pueden
+se realiza manteniendo presionadas las teclas particulares mientras un juego arranca.
+
+Otro uso de la ventana Teclado de software es visualizar el teclado
+con el fin de, por ejemplo, comprobar las fijaciones de clave. Las entradas del controlador serán
+se muestran como teclas en azul o verde dependiendo del puerto. El número
+teclas (1 - 8) representan botones y las teclas direccionales corresponden a
+los ejes. El pad de diez teclas visualiza ejes adicionales, si los hay.
+
+Mantenga pulsada la tecla Mayús al abrir la ventana Teclado de software para moverse
+fuera de la ventana de marco, en la medida en que esto es incluso posible.
+Se requieren ventanas de estilo emergente, que es una opción configurable.
+
+Modo de juego:
+
+Esta es una asignación experimental de teclado alternativo. A diferencia del estándar
+modo de teclado, esta configuración no es actualmente definible por el usuario.
+
+El propósito de este modo es proporcionar una manera rápida y fácil de cambiar
+el diseño del teclado a uno que es más útil para los juegos, que muy
+a menudo utilizan teclas que no existen en teclados modernos como XF1 o Touroku.
+
+La estrategia es la siguiente: Catalogar las claves que son cruciales para los juegos
+pero no están asignados en la configuración predeterminada del teclado, luego asignarlos
+claves que rara vez, si es que alguna vez, son utilizadas por los juegos (ignorando situaciones
+implicando la entrada de texto).
+
+Idealmente, este modo será compatible con tantos juegos como sea posible.
+Desafortunadamente, resulta que algunas de las claves de letras se utilizan
+en juegos de alto perfil, y aún se están descubriendo más. por lo tanto
+las fijaciones clave son experimentales y están sujetas a cambios. El más fácil
+manera de comprobarlos es abrir el teclado del software y empezar a escribir.
+A continuación, verá a qué se asigna cada clave.
+
+Habrá varios enlaces de clave para ciertas claves, como XF1/XF2.
+Algunas teclas del teclado de diez teclas están disponibles en el área principal del teclado.
+Esto se hizo para los usuarios que pueden no tener un teclado numérico en su teclado.
+
+NOTA: Ciertas claves del sistema están asignadas, pero pueden ser interceptadas por su
+Sistema operativo. Pueden tener efectos secundarios indeseables a menos que
+los han desactivado de alguna manera. Siempre habrá otras llaves con el
+la misma función que se puede utilizar en su lugar, aunque con menos comodidad.
+Los Kludges se utilizan para reducir el impacto, pero no funcionan perfectamente.
+
+NOTA: Las teclas Alt se asignan a teclas de función extendidas en este modo,
+pero siguen funcionando para activar menús y aceleradores.
+Sin embargo, cuando se utiliza como teclas del sistema, la entrada
+el X68000 emulado. Por ejemplo, presionando Alt-Q para tomar una pantalla
+la toma funcionará, pero también activará las teclas XFn y Q dentro de la máquina virtual.
+(La tecla de función extendida en particular depende de qué tecla Alt se utilice.)
+El mismo problema ocurre fuera de este modo si asigna las teclas Alt en
+la distribución regular del teclado.
+
+Mientras que en este modo, las traducciones clave utilizadas para hacer la entrada de texto en un
+Teclado en inglés más fácil será desactivado. Cualquier llave que no haya sido
+reasignado conservará el vinculante (si lo hubiera) prescrito por el
+Configuración. La suposición es que dicha configuración será similar
+a la asignación predeterminada.
+
+Emulación del controlador de teclado:
+
+El teclado se puede utilizar para emular joysticks y otros controladores.
+Esta característica no interfiere con el uso de un controlador real.
+Sin embargo, tendrá prioridad sobre la entrada del teclado. El fuego rápido
+la función solo está disponible para controladores reales.
+
+La asignación de claves cambia en función de la configuración del tipo de joystick.
+Los botones se asignan normalmente a las teclas de letra en los tres primeros o
+cuatro columnas en el lado izquierdo del teclado. Tenga en cuenta que la mayoría de los juegos
+apoyar el joystick básico de dos botones estándar Atari.
+
+Puede haber varias claves que se asignen al mismo botón del controlador.
+Por ejemplo, el modo joystick de dos botones asigna A, S, D y Z, X, C
+a los botones A, B, A, dando al usuario varias posiciones para elegir.
+Con algunas excepciones, los controles direccionales se asignan a
+numpad y las teclas de flecha.
+
+La forma más fácil de ver cómo se asignan las claves para un tipo particular de
+controlador es utilizar la ventana Teclado de software como se describió anteriormente.
+
+Diálogos:
+
+La mayoría de los cuadros de diálogo que aceptan la entrada numérica lo tratarán como hexadecimal.
+Si el valor predeterminado es decimal, el valor inicial no se rellenará con
+ceros a la izquierda.
+
+Puede forzar que la entrada se interprete como decimal prefijando la
+valor con un símbolo de ''. Este prefijo debe venir antes de que el
+signo, si está presente. '$' y '0x' se reconocen como prefijos hexadecimales.
+
+Barra de estado:
+
+Los distintos paneles/LED de la barra de estado se han ampliado para incluir
+algunas características de la interfaz de usuario.
+
+Los archivos se pueden arrastrar y soltar en la barra de estado. La unidad (para disquete
+discos solamente) se determinará por la ubicación aproximada: suelte una imagen de disco
+en un panel de disquete para insertarlo en la unidad correspondiente.
+
+Al hacer clic en los paneles FDD, se producirán varios efectos
+en el estado de la unidad y las teclas de clasificación, si las hay, que se mantienen presionadas.
+
+Al hacer un solo clic mientras se pulsa Mayús, se moverá el disco a la otra unidad.
+
+Al hacer un solo clic mientras se presiona Control, se intercambiarán discos entre unidades.
+
+Al hacer un solo clic mientras se pulsa Alt, se insertará el segundo archivo más reciente.
+
+Al hacer doble clic sin ningún calificador se llevará a cabo "la acción más probable".
+
+Las operaciones anteriores también funcionarán en las unidades 2 y 3, a pesar de que hay
+rara vez hay razón para cambiar de disco entre ellos.
+
+Al hacer clic con el botón derecho en un panel de disquete, se abrirá un menú emergente. Este menú es similar
+al menú habitual; la mayor diferencia es que el estado de bloqueo de la unidad
+se ignora por completo - los discos se pueden expulsar /insertar a voluntad.
+
+Advertencias:
+
+Las imágenes de directorio como disco no son en su mayoría compatibles en este caso.
+
+El uso de estas características mientras la emulación está en pausa puede causar confusión del usuario
+porque la eyección/inserción del disco requiere una pequeña cantidad de tiempo emulado.
+Los discos pueden ponerse en cola a la espera de la inserción mientras la emulación está en pausa.
+
+Tenga en cuenta que, aparte de Alt, es probable que las claves de clasificación anteriores
+interpretada como entrada X68000. Esto no suele ser un problema, pero podría
+comportamiento inesperado en algunos casos raros.
+
+
+
+ Referencia de opciones (General)
+------------------------------------------------------------------------
+
+Asignación de teclas:
+
+XM6 utiliza un poco de habilidad para permitir que ciertas teclas del sistema sean utilizables
+cuando se asigna a las teclas de teclado X68000, aunque no sin complicaciones.
+
+Las teclas de Windows son especialmente difíciles de usar de esta manera a menos que
+evitar que el sistema operativo los use de alguna manera. De lo contrario, terminarás
+activando algunos atajos del sistema eventualmente, aunque bajo el mejor de los
+circunstancias que esto puede ser bastante infrecuente.
+
+Las teclas Alt se pueden asignar y siguen funcionando para activar
+menús y aceleradores. Sin embargo, cuando se utiliza para ese propósito,
+entrada se enviará al X68000 emulado. Esto rara vez es un problema cuando
+juegos, pero puede ser una molestia durante la entrada de texto, por ejemplo.
+
+Estilo de ventana emergente:
+
+XM6 permite el uso de ventanas secundarias o ventanas emergentes. El primero
+no puede estar activo o recibir entrada directamente. También se limitan a
+el área de cliente de la ventana de marco. Ventanas emergentes, por otro lado,
+se puede mover fuera de la ventana de marco y recibir el foco de entrada.
+
+Esta última característica es lo que permite la mayoría de los nuevos comandos de entrada que
+hacer ventanas emergentes mucho más potentes. Puede cambiar el tipo
+de subventanas con la casilla de verificación "Opciones-'Misc->Estilo de ventana emergente".
+
+Modo de alta prioridad:
+
+Esto eleva o normaliza la clase de prioridad de XM6 dinámicamente.
+
+Puede utilizar esta opción para que XM6 reproduzca música en segundo plano
+mientras que la multitarea. Si el audio sigue rompiendo de vez en cuando, incluso en
+este modo, puede intentar aumentar el tamaño del búfer de audio en las opciones
+a 1000 ms (no recomendado para uso general debido a la alta latencia.)
+Ciertas operaciones de la interfaz gráfica de usuario XM6 todavía pueden dividir el audio sin importar qué.
+
+Precaución: Esto puede causar problemas al cerrar las tareas de menor prioridad.
+Asegúrese de que el equipo puede manejar primero la carga de procesamiento.
+Los modos de velocidad completa de VM/MPU se desactivarán y no estarán disponibles mientras estén en
+modo de alta prioridad por esta misma razón. Esta opción no se guarda.
+
+FDD de modo dual:
+
+Permite que todas las unidades de disquete funcionen con imágenes de disco de doble densidad.
+Las unidades X68000 normalmente solo admiten el formato de alta densidad.
+
+LED para motor FDD:
+
+Creo que esto hace que la pantalla LED de disquete revele el motor de accionamiento
+estado de actividad en lugar de emular lo que haría el LED de disquete real.
+
+LED de alimentación azul:
+
+Cambia el color del LED de alimentación emulado en el lado derecho
+de la barra de estado y en el cuadro de diálogo de versión (heh). Eso es todo.
+
+Podría ser útil para marcar configuraciones de hardware particulares.
+
+Circuito de generación de paridad:
+
+Si se quita, prohíbe conectar unidades SCSI a través de SASI (conocido como 'SxSI').
+
+Iconos FDD:
+
+Esta opción habilita iconos informativos en los paneles de disquete de la barra de estado.
+Los iconos se describen a continuación.
+
+Marca de verificación:
+
+El disco está en una unidad principal.
+
+Flecha verde:
+
+El disco está en una unidad secundaria.
+
+Flecha amarilla:
+
+El disco está en una unidad terciaria.
+
+Flecha roja:
+
+El disco está en una unidad incorrecta.
+
+Signo de interrogación:
+
+El uso de la unidad aún no se ha investigado para esta imagen de disco en particular.
+
+Sin icono:
+
+La imagen de disco no se reconoce, está en un formato no compatible o se modifica.
+
+Los iconos de flecha miran hacia la unidad principal del disco. Las unidades 2 y 3 nunca pueden
+ser unidades primarias, por lo que los iconos de flecha hacia la izquierda la mayor parte del tiempo.
+
+Las unidades principales son unidades para las que un disco determinado es el más adecuado.
+En la mayoría de los casos, se debe insertar una imagen de disco en su unidad principal.
+Algunos juegos son lo suficientemente flexibles como para aceptar uno o más discos en
+Conducir 0 o 1; estos discos tendrán ambas unidades marcadas como primarias.
+
+Un disco marcado como estar en una unidad secundaria indica que se conoce la imagen
+para tener algún uso en esa unidad, pero puede que no sea lo que pretendía. Un ejemplo
+es un disco que se puede arrancar para entrar en un modo especial, como la creación de discos de usuario
+o una prueba de sonido. Los discos que son totalmente utilizables en las Unidades 2 y 3 recibirán el
+indicador de accionamiento secundario.
+
+El icono de unidad terciaria rara vez se utiliza. Esto significa que el disco se puede utilizar en
+que unidad, pero no es convencional y podría ser subóptima, posiblemente causando
+problemas más adelante. Sin embargo, no es obligatorio mover el disco.
+
+Si un disco está en una unidad para la que no tiene un propósito conocido, el icono rojo
+ser mostrado. Para mayor comodidad, el menú utilizado recientemente de la unidad principal
+se rellenará automáticamente.
+
+Tenga en cuenta que sólo porque un disco está marcado como estar en la unidad incorrecta,
+no significa necesariamente que el disco deba moverse en ese momento.
+Por ejemplo, algunos discos solo se utilizan para crear discos de usuario, por lo que mover
+un disco a su unidad principal no hará nada útil hasta que ingrese el
+modo de creación de disco de usuario. Muchos de estos casos complicados se describen en las notas.
+
+Por el contrario, a pesar de que un disco está en la unidad correcta, es posible que no sea necesario allí
+en este momento. Esta es una ocurrencia común para los juegos que tienen tres o más discos.
+Simplemente no hay una manera fácil de detectar qué discos se necesitan en un momento dado.
+
+CONSEJO: Si se muestran iconos de unidad, hay una mayor probabilidad de que
+ estará disponible para ese juego.
+
+Los iconos de unidad solo se mostrarán durante unos segundos. No se mostrarán
+para discos insertados automáticamente como consecuencia de la carga de un archivo de estado.
+
+SASI/SxSI/SCSI:
+
+La interfaz SASI predeterminada se puede utilizar para conectar hasta 16 discos duros
+de tamaño limitado.
+
+SxSI permite al usuario conectar dispositivos SCSI a través de la interfaz SASI;
+sin embargo, requiere un software especial para funcionar y, por lo tanto,
+no se recomienda.
+
+SCSI soporta unidades de disco duro más grandes, así como magneto-óptica y
+unidades de disco compacto. Requiere archivos ROM adicionales para funcionar:
+SCSIEXROM. DAT (SCSI externo) o SCSIINROM. DAT (SCSI interno).
+
+La mayor diferencia práctica entre SCSI externo e interno
+es que el primero puede coexistir con SASI en XM6. "Interno" en este
+caso significa que es una parte integral del modelo emulado X68000,
+mientras que "externo" significa que es un complemento para un modelo que utiliza SASI.
+
+Debe restablecer el sistema después de realizar cualquier cambio de configuración
+a lo anterior.
+
+Para comprobar que una interfaz funciona correctamente, inicie Human y ejecute
+Interruptor. X: HD_MAX mostrará un número si SASI está funcionando y SCSI_ID
+mostrará un número (generalmente 7) si SCSI está disponible.
+
+
+
+
+
+Referencia de opciones (gráficos)
+------------------------------------------------------------------------
+
+Estiramiento de pantalla completa:
+
+Esta opción está habilitada de forma predeterminada. Si está desactivado, entrando en Pantalla completa
+modo cambiará temporalmente la resolución de la pantalla a 800 x 600 x 16.
+Normalmente el modo de pantalla completa ampliará la ventana para llenar la pantalla
+en su resolución actual, que es mucho más rápida y menos disruptiva.
+
+Si la resolución de la pantalla es lo suficientemente alta, se extenderá a entero
+múltiplos de la imagen original (incluido el estiramiento horizontal),
+produciendo una imagen sin alias. Es posible que deba desactivar el
+barra de estado para recuperar toda la zona vertical con el fin de llegar a
+umbrales de resolución calificados.
+
+Una advertencia menor es que no hará ningún estiramiento si el emulado
+sistema está en una resolución comúnmente utilizada para la visualización de texto y la pantalla
+resolución es muy baja, ya que los resultados se ven mal sin ningún beneficio.
+
+Esta opción, al igual que la mayoría de los ajustes de View, aparece en la configuración
+pero no se almacenará en archivos de estado. El elemento de menú correspondiente
+no será accesible en el modo de pantalla completa a menos que la pantalla sea 800x600.
+La intención es prohibir al usuario cambiar esta opción, excepto cuando
+es seguro hacerlo.
+
+Máximo de pantalla completa:
+
+En el modo Pantalla completa, la imagen se extenderá hasta los límites de la
+ventana, ignorando las dimensiones de la imagen original. Esto puede resultar en
+en proporciones de aspecto antinatural bajo ciertas circunstancias, aunque
+desactivar la barra de estado puede ayudar un poco.
+
+Si está habilitada, esta configuración hace que el modo de pantalla completa se comporte de forma similar
+a la forma en que funcionaban las versiones anteriores. De lo contrario, simplemente se obtiene entero
+múltiplos de la imagen.
+
+Cuando se aparecen a pantalla completa, la rueda del ratón activará o desactivará esta configuración,
+además de su función habitual de ajustar los ajustes de estiramiento,
+como se describe más adelante.
+
+Redimensiona de pantalla completa:
+
+Al activar esta función, el modo De estiramiento de pantalla completa ignorará
+los factores de escala asociados con la resolución de pantalla virtual.
+Esto puede producir mejores resultados para algunas resoluciones de pantalla, aunque
+puede parecer poco realista en otros casos.
+
+Por ejemplo, una imagen de 256x256 mostrada en baja resolución normalmente
+duplicarse a 512x512 antes de que la pantalla completa de estiramiento/escalado
+cálculos, pero con el reescalo de pantalla completa habilitado, la imagen de 256x256
+se escalará directamente a múltiplos enteros, permitiendo lo contrario
+factores de estiramiento inalcanzables como 3, produciendo 768x768. Con esto
+opción desactivada, el primer múltiplo entero es 2, produciendo 1024x1024,
+que puede ser difícil de alcanzar en algunos monitores.
+
+Otro uso para esto es "corregir" la relación de aspecto de ciertos juegos,
+más comúnmente los que operan en la familia de resoluciones 512x256.
+Los resultados no serán tan precisos en comparación con un X68000 real, pero a menudo
+se ven mejor.
+
+Alisar:
+
+Esta opción hace que se aplique un efecto de suavizado siempre que el estiramiento
+por un múltiplo no entero. Esto sucede con frecuencia con cierto estiramiento
+modos y ocasionalmente debido a los modos de vídeo emulados que tienen demasiado
+resolución vertical (por ejemplo, una altura de 1024 siempre se comprimirá
+en modo ventana y posiblemente en modo de pantalla completa dependiendo de su
+configuración de visualización.)
+
+Cuando surta efecto, el alias se reducirá, pero la imagen
+parecen más borrosos.
+
+Estiramiento / Efectos CRT:
+
+Si está activada, se aplicarán efectos CRT y estiramiento horizontal.
+Si está desactivada, la imagen aparecerá perfectamente centrada en su
+resolución horizontal, aunque con el escalado de hardware todavía aplicado.
+
+Los efectos CRT cubren principalmente el posicionamiento de la imagen, que se utiliza en
+situaciones raras para rodar en la pantalla y cosas similares.
+
+La rueda del ratón activará o desactivará esta opción, además de
+(a veces) cambiar el modo de estiramiento como se documenta a continuación.
+
+Modo de estiramiento horizontal:
+
+Si el estiramiento está activado (consulte la opción anterior), esta configuración controla
+el grado por el cual la imagen se estira horizontalmente. Por favor, sea
+consciente de que el modo de estiramiento que se utilizará es altamente dependiente
+en el modo de pantalla emulado; ciertos modos ignorarán este ajuste
+o solo permitirá que el estiramiento horizontal se encienda o apague.
+
+La selección de modos es experimental, y no hay modo que
+funciona perfectamente en cada situación; por lo tanto, este entorno es
+no guardado en ninguna parte.
+
+No hay ninguna interfaz de menú para esta configuración; sólo se puede cambiar
+a través de la rueda del ratón en este momento. Cuando se cambia, un mensaje será
+impreso en la barra de estado que le informa de cuál es la nueva configuración.
+
+Los modos 1/4 y 1/3 tienden a ser mejor representativos de lo que
+un sistema real históricamente parecía, pero los dispositivos CRT habían
+una gran cantidad de variaciones y monitores podrían ser ajustados por el usuario.
+Por favor, utilice el modo que más le convenga para cada juego.
+
+
+
+
+1/4 o 1.25:
+
+Este es el modo predeterminado. También es lo que XM6 utilizó históricamente.
+Es un entorno bueno y conservador.
+
+Una imagen base con un ancho de 512 se extenderá a 640 en este modo.
+Esto lo hace ideal para juegos que cambian de modo de vídeo; las imágenes
+son más propensos a tener las mismas dimensiones resultantes, independientemente
+del modo de pantalla que el juego está utilizando en un momento determinado.
+
+1/3 o 1.333:
+
+Este modo tiende a tener el mayor alias, por lo que es posible que desee utilizar
+la opción de suavizado. Su intención es proporcionar una "relación de aspecto"
+de 4:3, a pesar de que ese término se aplica erróneamente en este caso.
+
+Tenga en cuenta que si mide la anchura/altura visible,
+probablemente no obtenga una relación calculada de 4:3, pero esto no tiene sentido.
+
+En el modo de 15 kHz, el factor de estiramiento será 1.35 en su lugar.
+
+1/2 o 1.5:
+
+Este modo puede parecer demasiado ancho para algunos juegos, pero tiende a tener
+la menor cantidad de alias, especialmente para el texto impreso con
+fuentes delgadas. (Para ciertos modos, se implementa internamente
+multiplicando la imagen base por 3 en lugar de 1.5, de hecho.)
+
+Una imagen base con un ancho de 512 se extenderá a 768 en este modo.
+
+2/1 o 2:
+
+Este modo ni siquiera es remotamente realista. Sólo se proporciona
+porque "corrige" la relación de aspecto de la pantalla por defecto
+modo de ciertos juegos, a saber, los publicados por Capcom.
+
+Lo ideal sería entrar en el modo de opción del juego y establecerlo en
+utilizar un modo de pantalla más amplio, pero el uso de este modo de estiramiento funciona
+como alternativa.
+
+Tenga en cuenta que en la mayoría de los casos ni siquiera podrá seleccionar
+este ajuste en modo ventana, porque la imagen resultante
+sería demasiado ancho para la ventana.
+
+Simulación Scanline:
+
+Si está activado, simula con mayor precisión las líneas de exploración de
+modos de vídeo (es decir, modos de 15 kHz donde los campos pares/extraños se superponen.)
+
+Por el momento, esto sólo simula líneas de exploración idealizadas. Incluso en RGB
+monitores, las líneas de exploración reales son mucho más gruesas cuando se iluminan de tal manera que
+el espacio noilminado entre ellos parece muy delgado, aún más
+más brillantes son las líneas.
+
+ Referencia de comandos
+------------------------------------------------------------------------
+
+Rastro:
+
+Ejecuta la siguiente instrucción. Similar a los comandos "paso a paso"
+en el lenguaje del depurador.
+
+Paso a paso:
+
+Ejecuta la siguiente instrucción o se ejecuta a un punto de interrupción especial
+después de ella, dependiendo de la instrucción que sea. Utilizado para saltar
+llamadas subrutinas y operaciones similares enumeradas a continuación.
+
+BSR CHK DOS FPACK IOCS JSR TRAP TRAPV
+
+Pase:
+
+Se ejecuta a un punto de interrupción especial en el siguiente punto de interés, que
+incluye también las instrucciones enumeradas en el párrafo anterior
+como cualquier línea con una instrucción de punto de interrupción, rama o devolución. Si el
+siguiente instrucción a ejecutar es una llamada subrutina o similar
+instrucción, este comando se ejecutará a la siguiente línea al igual que el
+El comando Paso Por Paso. En el improbable caso de que nada "de interés"
+se puede encontrar cerca, se ejecutará un número establecido de instrucciones.
+
+Ejecutar a siguiente:
+
+Intenta ejecutar a un punto de interrupción especial establecido en la siguiente instrucción.
+Esto está pensado para usarse para omitir ciertas instrucciones de bucle.
+Se recomienda que solo utilice este comando cuando sepa
+seguro de que la instrucción actual es la única que puede terminar
+el bucle; de lo contrario corre el riesgo de perder el control.
+
+Ejecutar hasta el final:
+
+Intenta ejecutar hasta el final de la subrutina actual. Se ejecuta
+instrucciones hasta que encuentre una operación de devolución (de cualquier tipo) coincidente
+con los siguientes criterios:
+
+- El bit del modo Supervisor debe estar en el mismo estado que cuando este
+  comando fue invocado.
+
+- El puntero de pila debe ser no menos que cuando se invocó este comando.
+
+Este algoritmo no funcionará en todas las situaciones, pero debe ser adecuado.
+Si la subrutina nunca vuelve, puede anular la operación deteniendo
+ejecución (Alt-F12).
+
+Si se realiza correctamente, la ejecución finalizará en el RTS/RTE/RTR. Para terminar
+"salir", simplemente realice un solo comando Trace (F11).
+
+Paso a paso:
+
+Igual que Run to End excepto que ejecuta la instrucción return
+para ti también. Si se produce una excepción en la instrucción de devolución,
+usted no terminará en el lugar correcto después de todo, así que tenga en cuenta
+esta posibilidad si terminas en un lugar inesperado.
+
+Inserción de RAM:
+
+Carga un archivo directamente en la memoria principal del X68000. Usted será
+la dirección de destino, que debe ser inferior a la cantidad
+memoria instalada en el X68000. Típicamente esto será $200000,
+pero podría ser tan alto como $C00000 dependiendo de la configuración.
+
+
+Volcado de RAM:
+
+Guarda todo el contenido de la memoria principal del X68000 en un archivo.
+
+Volcado de memoria:
+
+Guarda un rango de datos desde cualquier lugar del espacio de direcciones en un archivo.
+A diferencia del comando RAM Dump, esta función puede leer desde VRAM y otros
+direcciones por encima de $C00000, pero es mucho más lento porque tiene que interconectar
+con varios controladores de memoria.
+
+Se le pedirán dos direcciones. Juntos, estos valores consolidaron la
+rango que se guardará. El primero es inclusivo/cerrado, el segundo es
+exclusivo/abierto. Sólo se utilizarán los 24 bits inferiores, pero si este último
+valor es cero, se tratará como $1000000 (es decir, la parte superior de la
+espacio de direcciones.)
+
+Registro de estado de CPU:
+
+Esto desmontará la instrucción actual y la salida más
+CPU útil se registra en un archivo cada vez que se ejecuta una instrucción.
+Se detendrá automáticamente una vez que escriba unos 20 MB. También puede
+detenlo manualmente seleccionando el elemento de menú de nuevo.
+
+Puede controlar fácilmente lo que se registra mediante el desensamblador
+ventana, puntos de interrupción, comandos de ejecución, etc.; el maderero permanecerá
+activo mientras recorre el código o se ejecuta entre puntos de interrupción.
+
+Guardar desmontaje:
+
+Desmonta las instrucciones con algunas bellezas de formato. Usted lo hará
+primero se le pedirá un nombre de archivo y luego la dirección final (incluido)
+que se establecerá por defecto hasta el final de la "página" actual (puramente un artefacto
+de la arquitectura de la ventana de desmontaje; el 68000 utiliza un direccionamiento plano
+esquema). La dirección de inicio se toma de la vista actual de la
+correspondiente ventana de desmontaje.
+
+También puede copiar aproximadamente 4kB valor de instrucciones desmontadas
+al portapapeles presionando C / Ctrl-C en una ventana de desmontaje activa.
+
+Encontrar:
+
+Cada ventana de memoria abierta puede iniciar un diálogo no modal con la capacidad
+para buscar en la memoria principal del X68000. No se requieren ventanas de estilo emergente.
+
+Se permiten las direcciones de búsqueda hacia delante y hacia atrás; simplemente presione
+el botón correspondiente. Un pequeño cuadro combinado controla la dirección donde
+la búsqueda comenzará desde (que es +/- un byte de esa dirección
+dependiendo de la dirección; es decir, la búsqueda desde la dirección X se iniciará
+en X + 1 para búsquedas hacia delante o X - 1 para búsquedas hacia atrás.)
+Las búsquedas se ajustarán hasta que se haya escaneado toda la RAM.
+
+Mantener pulsada la tecla Mayús mientras se activa uno de los botones de búsqueda se invertirá
+la dirección de búsqueda. Mantener el control hará que el cuadro de diálogo se cierre
+después de que se intente la búsqueda. Las búsquedas se pueden repetir después de la 
+diálogo se cierra pulsando (Shift) F3, aunque la memoria correspondiente
+ventana debe tener el foco del teclado y ser estilo emergente.
+
+La dirección de inicio está precargada con lo que esté en la parte superior de la
+ventana de memoria principal. Cada vez que se encuentra una coincidencia, el
+dirección se añadirá al cuadro de lista, que también se precargará
+con la dirección cero para su conveniencia. El contenido del cuadro de lista
+no persistirá después de cerrar el cuadro de diálogo de búsqueda.
+
+La dirección inicial determina el área de memoria que se va a buscar.
+Normalmente uno sólo querrá buscar la RAM principal, pero si la dirección
+está dentro de ciertos rangos permitidos entonces el tipo correspondiente de
+RAM/ROM se escaneará en su lugar.
+
+Por ejemplo, si la dirección está entre E00000 y E80000 (exclusivo)
+a continuación, TVRAM (y sólo TVRAM) se buscará. Esta característica, en particular,
+excluye GVRAM y los primeros $20 bytes del área SCSI externa.
+
+La casilla de verificación "Alinear" se puede utilizar para restringir el conjunto de direcciones
+que pueden calificar como partidos, reduciendo potencialmente falsos positivos.
+Cuando están activas, las búsquedas alineadas requieren que un número impar de bytes
+sólo puede comenzar con una dirección impar y viceversa. Alineación solamente
+se aplica a secuencias de búsqueda que van de uno a cuatro bytes de tamaño.
+
+Por ejemplo, cuando se aplica la alineación, las cantidades de 16 y 32 bits
+sólo coincidirá cuando se encuentre en una dirección uniforme; valores que abarcan palabras
+se filtrará, lo que normalmente se desea ya que el procesador
+requiere que tales cantidades estén alineadas con palabras. Buscando un 24 bits
+dirección con la opción de alineación sólo informará de la dirección impar como
+que la dirección completa de 32 bits (MSB no utilizado) estará correctamente alineada.
+
+El cuadro de diálogo contiene un control de edición en el que se introduce la cadena de búsqueda.
+Tratará la entrada como bytes hexadecimales o un carácter sin procesar
+cadena (distingue mayúsculas de minúsculas). Alternativamente, un solo valor decimal también puede
+introducirse utilizando un prefijo especial como se describe a continuación.
+
+Se toleran las siguientes en cadenas hexadecimales:
+
+espacio en blanco, comas, signos de dólar y las secuencias "0x" y "0X"
+
+Todos los dígitos hexadecimales están aislados y se agrega un cero a la izquierda si
+el número total es impar. Los dígitos se convierten a binarios para ser
+utilizado en la rutina de búsqueda.
+
+Ejemplos de secuencias hexadecimales válidas:
+
+
+ 0
+ $b
+ Af
+ 123456789ABCDEFabcdef$$$,0x
+ 0x00, 0x01, 0x02
+ $d $f0 $3
+ 0x10x20x3
+
+Tenga en cuenta que es posible que los dos últimos ejemplos no le proporcionen los resultados esperados.
+Corresponden a las secuencias $DF03 y $123.
+
+Si se encuentra algún carácter no hexadecimal distinto de los anteriores
+mientras analiza la entrada, los datos se tratarán como una cadena de
+caracteres que distinguen mayúsculas de minúsculas. Esto incluye los dígitos hexadecimales JASCII / "wide".
+La única excepción es si se utiliza el prefijo decimal ( ) .
+
+Se puede buscar un número decimal prefijando el número con
+el carácter ''. Un signo menos opcional puede aparecer a ambos lados
+del prefijo, y las comas se toleran entre los dígitos. El decimal
+valor se convertirá en una secuencia de bytes; estará acolchado para ser
+al menos dos bytes ya que las secuencias decimales de un solo byte no son muy
+Práctico. Si el valor supera los 10 dígitos o caracteres inesperados
+se encuentran, a continuación, la entrada se tratará como una cadena.
+
+Hay algunas secuencias que son ambiguas. Por ejemplo, buscar
+para "BAD AD" (sin las comillas) se llevará a cabo una búsqueda hexadecimal,
+que puede no ser lo que pretendía.
+
+Ejemplos de palabras comunes en inglés que también son números hexadecimales:
+
+un accedeción accedió ace aced ad add añadido
+ mal mal mal ser cuentas cuentas cama de abeja de abeja carne de res carne de res
+ cad taxi café cedido
+ dab papá muerto sordo deeded
+ ebb ebbed borrado borrado
+ fa fab cara a la moda se desvaneció alimentado alimentación
+
+Puede forzar que la entrada se trate como caracteres sin procesar prefijando
+la búsqueda con una comilla (única o doble), que será despojada
+para la búsqueda real, junto con una marca de comillas finales opcional.
+Las comillas en otros lugares se utilizarán en la búsqueda. Hay algunos
+otras rarezas con respecto a las comillas; en el improbable caso de que desee
+encontrar una ocurrencia de una comilla y nada más, se puede introducir
+uno, dos o tres de ellos en una fila y el resultado será el mismo.
+
+Ejemplos de secuencias de caracteres válidas:
+
+ asdf
+ 'DEAD
+ "aaaa
+ "Boo"
+ freerf"333~+
+ "
+ ''
+ """
+
+El diálogo también aceptará la mayoría de los caracteres japoneses, pero deben ser
+Shift-JIS codificado en la versión ANSI del programa y Unicode codificado
+en la versión Unicode.
+
+Tenga en cuenta que todavía sólo puede buscar caracteres Shift-JIS
+(o ASCII) incluso en la versión Unicode. Si la cadena de búsqueda no puede
+se convertirá completamente a Shift-JIS, la búsqueda fallará. No es
+probable que cualquier software X68000 existente utilice Unicode, por lo que la conversión
+es realmente beneficioso; La entrada Unicode sería inútil de lo contrario.
+
+Dependiendo de la configuración del sistema, es posible que los caracteres Shift-JIS no
+aparecen correctamente en la versión ANSI, pero siempre y cuando sean de buena fe
+Shift-JIS entonces la búsqueda se realizará correctamente. Los signos de interrogación suelen significar que
+pegó Unicode en la versión ANSI y no se pudo convertir.
+
+Si XM6 detecta que tiene el idioma japonés instalado en su
+sistema, se seleccionará una fuente japonesa para el control de edición en tiempo de ejecución
+para que pueda ver caracteres japoneses en el cuadro de diálogo de búsqueda, incluso en
+la versión ANSI.
+
+La entrada Unicode no funciona en la versión ANSI (se convertirá
+a los signos de interrogación antes de que XM6 lo reciba). Lo más probable es que su IME no emita
+el formato Shift-JIS que necesita la versión ANSI a menos que su configuración regional sea
+establecido en japonés.
+
+Si necesita funciones de búsqueda más potentes, puede utilizar una de las
+otros comandos para exportar memoria a un archivo y utilizar herramientas externas en él.
+
+Puede aparecer un mensaje en la barra de estado en la parte inferior de la ventana de marco
+para indicar que la búsqueda falló, que una búsqueda repetida falló, o
+que la búsqueda se envolvió alrededor.
+
+Se recomienda detener la emulación antes de realizar una búsqueda,
+pero no es necesario. Puede suceder que se encuentre una dirección coincidente
+pero el valor cambia poco después, lo que lleva a confusión cuando
+la ventana de memoria parece saltar a una dirección que contiene el valor incorrecto.
+
+
+
+Búsqueda dinámica de memoria
+--------------------------------------------------------------------------------
+
+Esta función está integrada en la ventana de memoria. Puede cambiar de un lado a otro
+entre este modo y la vista de memoria estándar en cualquier momento. Mientras que lo habitual
+modo muestra cada valor almacenado en un rango arbitrario de direcciones, el modo DMS
+solo muestra las direcciones RAM que han cumplido sus criterios. Por lo tanto, puede reducir la
+direcciones mostradas hasta las que le interesan. Esto es muy útil para
+hacer trampas y propósitos similares de "hacking".
+
+Tenga en cuenta que las subventanas de estilo emergente deben estar habilitadas para utilizar esta característica
+porque la interfaz es casi enteramente unidad de teclado.
+
+Inicialmente, se mostrará cada dirección RAM y el contenido de la RAM X68000
+ser copiado en un búfer. A medida que emita comandos, las ubicaciones de memoria se ocultarán.
+Por lo general, uno continuaría emitiendo comandos en varios puntos hasta que uno o
+más direcciones de interés se encuentran.
+
+Los comandos más útiles comparan los valores actuales de RAM con sus
+estado almacenado en el búfer. De esta manera, se puede restringir el conjunto de direcciones
+a aquellos que han aumentado, disminuido, cambiado o se han mantenido igual. Después
+cualquiera de estos comandos, el búfer se actualizará automáticamente, aunque este
+característica se puede inhibir. El búfer también se puede actualizar manualmente en cualquier momento.
+
+Tenga en cuenta que hay dos conjuntos de direcciones: uno para los valores de tamaño de byte y
+uno para los valores del tamaño de una palabra, aunque solo se mostrará un conjunto a la vez.
+Dado que uno normalmente no conoce el tamaño del valor de interés de antemano,
+DMS funciona en ambos tamaños simultáneamente. Esto elimina la necesidad de adivinar
+el tamaño correcto al principio. La barra de título de la subventana muestra el número
+de ubicaciones existentes para ambos tamaños.
+
+Comandos de búsqueda dinámica de memoria
+
+Consulte la referencia clave o la ayuda integrada para
+disponibles y las teclas que los activan. Esta sección sólo documenta
+algunos comandos que necesitan descripciones más detalladas.
+
+Ejecutar después de la búsqueda
+
+Deshabilitado de forma predeterminada, esta característica hace que la emulación se reanude automáticamente
+después de que se emita cualquier búsqueda relativa. Las búsquedas de valores absolutos no se ven afectadas.
+
+actualizar
+
+Este comando copia los valores actuales de la RAM X68000 en un búfer que
+se utiliza para comparaciones relativas (es decir, comparar con el valor anterior).
+Normalmente, el búfer se copia automáticamente después de dichas búsquedas, pero puede
+actualice manualmente los valores anteriores en cualquier momento con esta operación. Hay
+también un comando para alternar las actualizaciones automáticas antes mencionadas.
+
+Deshacer
+
+Solo se almacena un nivel de deshacer. Deshacer una segunda vez actuará como un 'rehacer'
+Operación. La copia de RAM utilizada para comparaciones relativas no está cubierta por la
+deshacer la operación por lo que es posible que desee utilizar el comando 'actualizar' después de deshacer a
+evitar confundirse.
+
+Unidades
+
+Puede cambiar las unidades entre byte y palabra (8 y 16 bits) en cualquier momento.
+Todos los comandos funcionan en ambos conjuntos de direcciones, independientemente de cuál sea
+que se está mostrando actualmente. Las unidades cambiarán automáticamente si un conjunto
+está completamente agotado.
+
+Modos de visualización
+
+Hay dos modos: completo y compacto. El primero muestra una ubicación de memoria
+por línea junto con el valor anterior entre paréntesis. En el modo byte puede
+también muestran "B/W" indicando que la dirección en cuestión también existe en el
+conjunto de tamaño de palabra.
+
+El modo compacto funciona de forma similar al visor de memoria estándar con 16 bytes
+por línea. Cuando sólo existe una ubicación de un rango de 16 bytes,
+la línea será formateada con la dirección exacta que se muestra a la izquierda.
+
+Temas de búsqueda dinámica de memoria
+
+Radix de entrada
+
+Al comparar con un valor específico, la entrada se interpretará como
+decimal o hexadecimal dependiendo de varias heurísticas.
+
+Si la entrada es inequívocamente hexadecimal, se tratará como base 16.
+Los prefijos también establecerán el radio: utilice '' para la base 10, '$' o '0x' para la base 16.
+De lo contrario, se utilizará el radio predeterminado actual.
+
+El radio predeterminado, representado por un símbolo, se muestra en la barra de título.
+
+Tenga en cuenta que las direcciones siempre tienen como valor predeterminado la base 16, aunque el prefijo '' todavía puede
+para forzar que la entrada se interprete como decimal.
+
+Firmado contra sin firmar
+
+Debido al milagro de la aritmética de dos complementos, la mayoría de las matemáticas
+operaciones se pueden realizar de manera transparente sin definir explícitamente
+la firma de los operandos. Pueden surgir problemas al comparar dos
+valores, sin embargo.
+
+En situaciones en las que dos valores no se pueden comparar inequívocamente sin conocer
+si están firmados o sin firmar (es decir, los bits de signo difieren) entonces
+ser saltado. En otras palabras, la dirección que se está probando seguirá siendo viable hasta que
+se realiza otra búsqueda, momento en el que se reevaluarán en función de
+el nuevo criterio.
+
+Esto se hace porque es poco probable que el usuario sepa con certeza cómo interpretar
+el valor que se busca. Aunque la mayoría de los valores en computación tienden a mantenerse positivos,
+no se espera que sea gravoso apoyar ambas interpretaciones de bits de signo.
+De hecho, la firmeza de una variable es básicamente inútil, siempre y cuando el
+rango de valores que posiblemente puede contener está suficientemente restringido.
+
+En la práctica, esta regla sólo se aplica a los criterios aumentados/disminuidos.
+
+Byte versus Word
+
+Es bastante común encontrar un candidato de tamaño de byte en una dirección impar donde el
+palabra en la dirección par correspondiente también cumplió todos los criterios de búsqueda de uno.
+(Normalmente esto sucede cuando el byte par permanece cero, aunque hay un pequeño
+posibilidad de que dos bytes contiguos con diferentes propósitos acaba de suceder a
+seguir los mismos criterios cuando se interpreta como una cantidad de palabra.)
+
+Cuando se enfrenta a tal ambiguedad, a menudo se puede determinar el tamaño correcto
+experimentalmente modificando el byte par y observando los resultados. Sin embargo
+si esto es demasiado arduo, generalmente es más seguro tratarlo como el tamaño más pequeño,
+aunque esto será formalmente incorrecto la mayor parte del tiempo.
+
+Palabras desalineadas
+
+Las palabras desalineadas no son compatibles con los primeros procesadores de 680x0, por lo que
+no es probable que se utilicen para almacenar variables de interés en el X68000.
+Tal uso sería más plausible en el software X68030 mal programado,
+pero tales programas no serían compatibles con el X68000 y
+por lo tanto, no se ejecutaría en este emulador de todos modos.
+
+Palabras largas
+
+Los valores de 32 bits no son compatibles porque rara vez son necesarios, lo que
+el almacenamiento de memoria adicional y la complejidad del código difícil de justificar.
+Su falta de alineación natural (es decir, sólo requieren alineación de 16 bits)
+también hace que la implementación de búsqueda sea significativamente más complicada.
+
+Sin embargo, todavía es posible encontrar la mitad inferior de una variable de 32 bits
+si usted sabe el valor exacto: cuando se introduce una cantidad que no puede caber dentro de
+16 bits, sólo se utilizarán los 16 bits más bajos. Por lo tanto, usted no tiene que hacer
+cualquier conversión numérica o enmascaramiento de bits a sí mismo. No serás capaz de decir
+sin embargo, si los bits superiores de la dirección anterior son correctos.
+
+La vista de 32 bits sigue estando disponible en modo DMS; el espectador simplemente
+mostrar todas las direcciones RAM sin exclusiones, lo que permite al usuario
+una oportunidad para examinar ciertos valores en contexto.
+
+Otras cantidades
+
+No hay manera de rastrear directamente los cambios en los campos de bits, bits individuales,
+o cualquier otra disposición lógica de la memoria que no sean bytes y palabras alineadas.
+
+Relojes de memoria
+
+Puede "ver" direcciones de memoria específicas eliminando primero todas las direcciones
+y luego agregar manualmente los que le interesan. Otra forma de hacerlo
+esto es para restringir las direcciones a una sola ubicación (o una 
+direcciones) y agregue manualmente cualquier ubicación adicional si así lo desea.
+
+
+
+Trucos
+------------------------------------------------------------------------
+
+Una vez que haya encontrado una dirección prospectiva mediante búsqueda dinámica de memoria,
+puede agregar un truco directamente manteniendo presionado Control y haciendo doble clic
+la dirección. Esto abrirá un cuadro de diálogo con ciertos campos rellenados.
+También puede agregar un truco manualmente a través de la interfaz del menú.
+
+Interfaz
+
+El subsistema de engaños se interconecta en gran medida a través de los menús,
+la mayoría de los cuales son autoexplicativos o de otro modo intuitivos.
+
+La marca Master Enable debe establecerse para que los trucos surtan efecto.
+Se borrará durante un restablecimiento si se habilita algún truco. Esto es
+por razones de seguridad.
+
+Si no proporciona una descripción para un tramposo, la dirección y el valor
+se mostrará en su lugar. De lo contrario, puede ver esta información
+en la barra de estado. Para los tipos de trucos más comunes, el valor será
+se muestra después de la descripción.
+
+Al introducir manualmente una dirección en el cuadro de diálogo de trucos, es posible
+para establecer simultáneamente el tamaño mediante el uso de un sufijo. Por ejemplo, añadir . B para
+tramposos del tamaño de un byte. 'W' y 'L' especifican la palabra y la palabra larga respectivamente.
+
+Tipos de trucos
+
+Valor constante
+
+El tipo predeterminado simplemente escribe un valor constante en la dirección especificada.
+
+Valor automático
+
+Este tipo no acepta un valor, solo una dirección. El valor que se utilizará
+se leerá desde la dirección especificada cada vez que el truco se habilite.
+En otras palabras, cuando se activa, este truco mantiene el valor de una variable.
+
+Valor relativo
+
+El valor se agregará a la variable de memoria siempre que se habilite este truco.
+Este tipo es necesariamente siempre de un solo disparo, lo que significa que
+sólo activar bajo demanda. Es útil para modificar coordenadas o similares
+variables donde sólo el delta deseado puede conocerse con anticipación.
+
+Lógico Y/O
+
+Se realizará una operación lógica en el valor. Esto se puede utilizar para
+establecer o borrar bits individuales sin afectar al resto de la variable.
+
+Copia de memoria
+
+Este tipo acepta dos direcciones: un origen y un destino. La fuente
+dirección y su valor copiado a la dirección de destino.
+
+Modificadores
+
+Un solo disparo
+
+Si se establece, esta marca hace que el truco se deshabilite después de aplicarse.
+
+Especificar
+
+Aparecerá un cuadro de diálogo cada vez que el truco se habilite, proporcionando así el
+usuario la oportunidad de modificar el valor. Esto es más práctico para un solo disparo
+engaña cuando el valor deseado cambiará periódicamente.
+
+El valor predeterminado para el cuadro de diálogo será cualquiera que sea el valor anterior a menos que
+el tipo de trampa es Valor automático, en cuyo caso verá el valor de la
+variable que está modificando. (Tenga en cuenta que la variable podría cambiar en cualquier momento
+sin embargo, si la máquina virtual sigue ejecutándose.)
+
+Advertencias
+
+Los códigos de trucos pueden causar bloqueos u otros efectos indeseables si están habilitados
+en el momento equivocado, como durante el inicio. Dejar los trucos activados al cambiar
+juegos también puede causar problemas graves.
+
+La dirección de una variable en particular puede cambiar dependiendo de la versión
+del juego o de los ajustes en uso (como la cantidad de X68000 RAM).
+
+Los trucos no se aplicarán cuando la emulación esté en pausa o bajo carga pesada.
+Los trucos pueden o no aplicarse durante las operaciones de depuración.
+
+Tenga cuidado de establecer un valor demasiado cerca de los límites de su
+rango de excursiones. De lo contrario, podría rodar por encima / por debajo cuando el juego intenta
+para modificarlo.
+
+En este momento, no hay manera de guardar los trucos que ha creado.
+Hasta que se añada una característica de este tipo, debe copiar los datos que desee
+para guardar en un archivo de texto para su posterior recuperación.
+
+
+
+
+
+Ediciones Unicode y MBCS
+------------------------------------------------------------------------
+
+(En este contexto, el término "ANSI" es un nombre erróneo que se refiere a la
+página de códigos. Dicho término también se utiliza para referirse a la versión no Unicode
+de este programa, más correctamente llamado la versión MBCS.)
+
+Hay dos versiones del programa principal: MBCS ("ANSI") y Unicode.
+La edición Unicode se recomienda para la mayoría de los usuarios, ahora que la mayoría de los
+las limitaciones de compatibilidad se han superado.
+
+NOTA: Esta sección solo cubre las diferencias de codificación de caracteres.
+ Otra diferencia importante es que la versión MBCS todavía utiliza la
+ motor gráfico antiguo, que es mucho menos preciso, pero a veces más rápido.
+
+La principal ventaja de la versión Unicode es que puede
+caracteres Unicode válidos en nombres de archivo y rutas de acceso. La versión MBCS puede
+sólo archivos de lectura/escritura en los que toda la ruta se puede convertir en el
+página de códigos local.
+
+La versión MBCS no puede decodificar nombres de archivo UTF-8 (Unicode) en archivos.
+
+Ambas ediciones pueden leer archivos de estado creados en el otro formato,
+aunque la versión MBCS no podrá utilizar ninguna ruta que
+no son compatibles con la página de códigos local. Archivos de estado creados
+por el XM6 original son en su mayoría compatibles con los delanteros, pero sólo el
+La edición MBCS crea archivos de estado que el original todavía puede leer.
+(El XM6 original está muy anticuado ahora, por lo que la compatibilidad con versiones anteriores
+ya no es demasiado útil.)
+
+El archivo de configuración (.ini) debe estar en formato Unicode para
+para almacenar rutas de acceso que contengan caracteres fuera de la página de códigos local.
+Mientras no exista, se creará en Unicode
+formato automáticamente. Esto también se aplica si la versión Unicode fue
+capaz de encontrar y cargar un archivo de configuración ANSI en el mismo directorio.
+
+El uso de un archivo de configuración ANSI antiguo funciona directamente, pero el archivo
+permanece en su codificación original. Por lo tanto, la edición Unicode
+intentar cambiar el nombre de un archivo de configuración que no sea Unicode después de cargarlo
+para que cuando la configuración se escriba a medida que el programa sale,
+el nuevo archivo estará en el formato correcto.
+
+También se puede convertir un archivo de configuración ANSI manualmente cambiando
+la codificación. Una forma de hacerlo es abrirlo en el Bloc de notas y guardarlo
+como Unicode (no la variedad Big Endian o UTF-8).
+
+Un archivo de configuración ANSI, después de ser convertido a Unicode,
+será significativamente más grande, típicamente por un factor de dos.
+Esto se puede usar para comprobar que la conversión se realizó correctamente.
+Alternativamente, uno puede simplemente eliminar el archivo y empezar de nuevo.
+
+
+ Idioma de la interfaz de usuario
+------------------------------------------------------------------------
+
+De forma predeterminada, la interfaz estará en inglés a menos que el sistema operativo esté configurado
+para presentar en japonés.
+
+Cambiar el nombre ejecutable a XM6J o XM6E forzará el idioma
+japonés o inglés, respectivamente. Tenga en cuenta que los resultados
+no será idéntica en comparación con la ejecución en un sistema operativo específico del idioma,
+por razones desconocidas.
+
+Es mucho más probable que la versión Unicode funcione en este sentido.
+
+Unidades de disquete adicionales
+------------------------------------------------------------------------
+
+Un X68000 contiene dos unidades de disquete internas, pero es posible
+para sumar dos más. Esta expansión opcional ahora es compatible con XM6,
+aunque con algunas advertencias. No es muy útil para los juegos, ya que muy pocos
+unidades adicionales, y aún menos apoyarlos de tal manera que
+se vuelve más conveniente usarlos.
+
+Teniendo en cuenta lo anterior, esto se trata como una característica avanzada y, como tal,
+interfaz es un poco más difícil de usar que para las unidades regulares.
+Esta característica también se implementa dinámicamente, es decir, las unidades están conectadas
+y se elimina en función de las acciones del usuario en lugar de los valores de configuración.
+
+No hay submenús correspondientes en la barra de menú principal; la primaria
+interfaz para estas unidades es a través del menú emergente (clic derecho).
+Los argumentos de línea de comandos y arrastrar y soltar también se pueden utilizar para insertar
+hasta cuatro archivos a la vez. Ctrl-Alt-E expulsará las cuatro unidades.
+
+Los paneles TIMER y POWER LED se reutilizarán para las unidades adicionales
+cada vez que están conectados. Debido a limitaciones de espacio, los nombres de disco
+no se mostrará.
+
+No hay ninguna función de cv para las unidades adicionales. No es muy útil
+en este caso y requeriría romper la compatibilidad de archivos de estado.
+
+Por motivos de compatibilidad, solo dos unidades estarán disponibles de forma predeterminada.
+Para conectar una tercera o cuarta unidad a la máquina virtual, simplemente inserte
+una imagen de disco en la unidad respectiva. Es posible que deba reiniciar la máquina virtual
+para que el sistema reconozca las nuevas unidades, pero no siempre.
+
+Para desconectar las unidades adicionales, expulse sus discos y restablezca XM6.
+También puede salir de XM6 o cargar un archivo de estado adecuado.
+
+Los archivos de estado registran si una unidad tiene una imagen de disco cargada, pero no la
+estado de conexión de la unidad, que por lo tanto debe inferirse cuando un estado
+archivo se carga: si había una imagen de disco en la unidad cuando el estado
+se guardó, esa unidad se conectará cuando se vuelva a cargar el estado.
+
+Connecting Drive 3 conectará automáticamente Drive 2, ya que causa
+problemas con la mayoría del software de lo contrario. Del mismo modo, Drive 2 seguirá
+conectado siempre y cuando la unidad 3 sea; es permisible desconectar Drive 3
+manteniendo Drive 2, sin embargo. Operar con tres unidades sólo es
+totalmente compatible.
+
+
+
+
+
+ Información general
+------------------------------------------------------------------------
+
+ADVERTENCIA: Modificar imágenes de disco fuera de XM6 puede causar incoherencias
+si también está cargando archivos de estado, ya que ciertos parámetros de disco pueden
+ser almacenado en caché. Otro escenario arriesgado es cuando se escribe un disco en XM6
+pero, a continuación, carga un archivo de estado realizado antes de que se produjera la modificación.
+Restablecer la máquina virtual generalmente corregirá cualquier incoherencia,
+siempre y cuando lo haga antes de que se produzcan escrituras adicionales. Puede que ni siquiera
+necesidad de hacer esto con software más simple, como muchos juegos.
+
+Adición/eliminación de dispositivos MIDI o alteración de la configuración del mapeador MIDI
+puede causar problemas debido al cambio de los índices del dispositivo. XM6 almacena el
+índice de dispositivo configurado en archivos de estado y su archivo de configuración,
+así que si los índices cambian, un dispositivo diferente terminará siendo utilizado.
+Siempre debe reiniciar XM6 y verificar su configuración MIDI siempre que
+usted hace cualquiera de los cambios mencionados anteriormente, especialmente si XM6 se estaba ejecutando
+en ese momento, ya que su diseño de subsistema MIDI no se adapta a los cambios
+después de que se inicie el programa.
+
+El estado de los dispositivos MIDI externos no se puede almacenar en archivos de estado.
+Por lo tanto, puede obtener un comportamiento MIDI incorrecto al volver a cargar el estado.
+Típicamente esto se manifiesta como sonidos inesperados debido a instrumentos personalizados
+no estar cargado.

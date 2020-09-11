@@ -1,0 +1,1789 @@
+﻿
+
+NOTE: If you are viewing this file through an up-to-date version of XM6 Pro-68k,
+the clipboard should contain a possible game name (based on recently inserted
+floppy images) that can be used to search this file.
+
+
+Overview:
+
+This document contains useful information about X68000 games and software,
+such as key bindings and how to create user disks or access special modes.
+It does not purport to be comprehensive. It is updated frequently.
+
+Occasionally, advice for playing a particular game will also be provided.
+Typically this is only done for games where the language barrier affords
+a nearly insurmountable obstacle for those unable to read Japanese.
+
+Brought to you by http://mijet.eludevisibility.org/Preservation/
+Please consider contributing to our preservation project which, along with
+XM6 Pro-68k emulator development, has been the impetus behind this document.
+
+No websites are authorized to rehost this text, so don't bother asking.
+Since it is a work in progress, you would be doing your users a disservice
+by posting a soon-to-be-outdated copy anyway. (This is not an invitation
+to scrape it.)
+
+
+Caveats:
+
+Cheats are not normally included.
+
+Button labeling is not necessarily consistent for controllers.
+
+Ubiquitous input conventions, such as XF1/XF2 for actions or ten-key (numpad)
+for movement, will not necessarily be documented herein. RAM requirements will
+not be noted unless they exceed 2 MB.
+
+
+General Tips:
+
+Holding OPT.1 while booting will override the boot order.
+
+A blank (but formatted) disk will sometimes work as a user disk.
+
+Most software exclusively use the ten-key pad for directional input.
+
+ESC is commonly used to pause the game or to cancel / return from submenus.
+
+HELP often changes the screen mode. You may need to hold it down while loading.
+
+Games often use the extended function keys, which are not available on modern
+keyboards. Typically a joystick will work instead, but another solution is to
+remap those keys in a separate emulator configuration.
+
+Some games require particular keys to be held down to access special modes
+or enable features. In XM6, you can hold down any number of keys simultaneously
+in the virtual keyboard by right-clicking. Note that in a few cases you will
+need to start holding down the keys after rebooting in order for it to register.
+
+Arcade ports sometimes have major gameplay changes when in export mode.
+
+Before messing around with horizontal stretching in an emulator, first check
+if the game you are playing has any wider CRT modes available in the options.
+Capcom games in particular tend to default to narrower modes.
+
+
+
+	A-Jax / エー・ジャックス
+
+Keyboard controls:
+
+     2D    3D
+     ----  ----
+XF3  Shot  Shot
+XF4  Bomb  Missile (no function during the Stage 5 boss battle)
+XF5  Pow   Shot
+
+8 W  Up
+4 A  Left
+6 D  Right
+2 X  Down
+
+
+
+	After Burner / アフターバーナー
+
+Omake:
+
+To access the omake mode, you must boot Disk I from the second drive.
+Failing to do so can cause Space Harrier to crash, possibly mid-game.
+
+Type "FLI" at the prompt to run a primitive flight simulator demo.
+
+To play Space Harrier with analog joystick/mouse support, type "HAR"
+at the prompt. Next, insert Space Harrier into Drive 0 and then press
+any key to start. During play, OPT.1 switches to analog joystick mode.
+OPT.2 will switch back to mouse mode, which is the default.
+
+
+
+	Akumajou Dracula / 悪魔城ドラキュラ
+
+Boot Disk B to create a user disk or install to a hard drive.
+A writable copy of Disk B can function in place of a user disk.
+To play without a user disk, press Return (or Enter) when prompted.
+
+If MIDI support is detected, you must select the type of audio to use:
+
+1:   FM (OPM)
+2: MIDI (LA)
+3: MIDI (GS)
+
+There is also a hidden option: hold down XF1 and G for MIDI (GM).
+
+Controls:
+
+  Jump: Z or Button A
+Attack: X or Button B
+
+Setting the Trigger Flip option to Reverse will swap the above controls.
+
+Press Attack while holding Up to use an item (requires and expends hearts).
+
+If enabled, the Start button pauses the game whereas Select moves the cursor.
+
+
+
+	Alshark / アルシャーク
+
+Hold down HELP as the game boots to use MIDI (LA).
+
+The Data Disk can be used as a user disk. (Please don't do this with originals.)
+The ＵＤフォーマット option under the システム menu simply duplicates the Data Disk.
+
+
+
+	Aquales / アクアレス
+
+Boot the Data Disk from Drive 0 to create a user disk.
+
+Controls:
+
+Fire: Button A  XF1  Space
+Jump: Button B  XF2
+
+Press Fire and Jump simultaneously while pressing Down to open the weapon menu.
+
+There are several critical maneuvers that can be accomplished while jumping.
+
+Hold Fire or Jump to speed up the cinematic scenes.
+Press both simultaneously to skip a scene entirely.
+
+Press HELP to toggle the 15 kHz mode. The entire screen won't fit, however.
+
+Press SHIFT+BREAK to end the game.
+
+
+
+	Arcus II -Silent Symphony- / アークスⅡ サイレント・シンフォニー
+
+Boot Disk IV from Drive 0 for some omake content, including a commercial for
+Arcush. The original intent was probably for the user to press RESET after
+completing the game, at which point Disk IV would be in the correct drive.
+
+Keyboard controls:
+
+F1 pauses the game but you have to tap it quickly to unpause successfully.
+HELP toggles screen stretching and also affects screen brightness slightly.
+ENTER or Return open the menu and typically cancel. The space bar confirms.
+
+
+
+	Arcus Odyssey / アークス・オデッセイ
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+Keyboard controls:
+
+    U L R D Attack Item/Spell
+    ------- ------ -----
+1P: 8 4 6 2 OPT.1  OPT.2
+2P: P L : . XF1    XF2
+
+General controls:
+
+Hold down Attack to block. You can then press the other button/key for the menu.
+The ESC key will also open the menu.
+
+
+
+	Arkanoid: Revenge of D-O-H / Revenge of DOH / アルカノイド・リベンジ・オブ・Ｄ・Ｏ・Ｈ
+
+Certain rounds will have different layouts on occasion.
+
+XM6: If the game crashes, try using a higher CPU clock rate.
+
+
+
+	Asuka 120%: BURNING Fest. / あすか 120% / あすか１２０％
+
+Interface controls:
+
+Return:  Button A  OPT.1  XF1
+Confirm: Button B  OPT.2  XF2
+
+XF1 and XF2 don't work for certain menus. Return often functions like Confirm.
+
+Keyboard controls:
+
+   1P     2P
+ -----  -----
+ 7 8 9  T Y U
+ 4   6  G   J
+ 1 2 3  B N M
+ OPT.1   XF1
+ OPT.2   XF2
+
+Keyboard controls won't function unless selected in the options.
+
+
+HDD installation:
+
+Insert Disk A into Drive 0 and then enter the following command:
+
+A:          (where A is the drive letter corresponding to Drive 0)
+INSTALL X:  (where X is the drive letter of the destination HDD)
+
+Next press any key to begin installing. Eventually you will be told to insert
+Disk B into Drive 0. After doing so, press any key to resume the installation.
+
+You must boot Disk A to play from a hard drive installation, in most cases.
+
+
+
+	Atomic Robo-Kid / アトミック・ロボキッド
+
+Hold down F1 as the game boots to use MIDI (LA).
+
+
+
+	Bahnwelt, Die / Die Bahnwelt / バーンウェルト
+
+Press CLR to open the menu during the game.
+
+Boot the Ending Disk (either drive will work) for a music mode. Hold down one of
+F1 - F4 as the background picture finishes displaying to select the audio type:
+
+F1: FM - X68000 internal audio only
+F2: RM - Like FM but uses MIDI for rhythm/percussion sounds
+F3: CM - Linear Arithmetic MIDI (also uses FM synthesis to an extent)
+F4: GM - General MIDI
+
+A script for HDD installation is available on the System Disk: Bwsys\HDINST.BAT
+
+
+
+	*Battle Chess
+
+Do not press the CPY key.
+
+
+
+	Bonnou Yobikou 2 / 煩悩予備校２
+
+There is an on-disk text file explaining that MIDI support was not implemented,
+contradicting the manual. There do not appear to be any MIDI files on the disks.
+
+
+
+	*Bosconian / ボスコニアン
+
+The Music Test Mode does not include all the music.
+
+The arranged game ends after Round 48; the original game after Round 99.
+
+Keyboard controls:
+
+Fire: XF1 XF2 Space HELP
+
+The ten-key pad diagonals are functional.
+
+Do not press the CPY key.
+
+
+
+	Bretonne Lais / ブルトン・レイ
+
+You can skip the opening by booting Game Disk 1 from the first drive.
+
+To create a user disk, first select the second option of the main menu to access
+the utility menu. From the utility menu, select the fifth option (ユーザーディスクの作成)
+to format a disk in the second drive to be used as a user disk. You will still
+need to add scenarios and characters to this disk, as described below.
+
+From the utility menu, select the second option (プレイシナリオの作成) to add scenarios
+to the user disk. At this point you will be instructed to insert Game Disk 2
+into the first drive and the user disk into the second drive before selecting
+the first option (作成) to proceed.
+
+You should see a list of scenarios. Select one and then choose a destination
+slot (there are five) on the user disk. The specific slot does not matter,
+except when overwriting an existing scenario, because the scenarios will be
+sorted when displayed. Continue adding scenarios as desired, then select the
+second option or press ESC.
+
+When you are finished, you will be instructed to reinsert Game Disk 1.
+
+Finally, select the third option (キャラクターの作成) to create a character to be used
+in a particular scenario.
+
+The sixth option or ESC will return you to the main menu. From here, the first
+option will allow you to select a scenario (with a character attached) to play.
+
+In-game controls:
+
+The ten-key pad is used for basic movement; the '5' key is used to wait.
+
+The cursor keys will cause the character to automatically navigate to the
+adjoining area in the direction pressed, if possible. The ten-key '0' key
+also has some sort of minor automatic movement function.
+
+The ten-key '*' key switches between 攻撃 and 防御 (offense and defense).
+
+RLUP/RLDN adjust the meter between 行動速 and 疲労度; the further to the right,
+the more fatigue will be incurred, but actions will also be faster relative
+to others. The right side of the bar will turn magenta as fatigue increases.
+
+INS displays the map.
+
+HOME/CLR will open the camp menu and ESC will close it (and most other menus.)
+
+The '-' key on the ten-key pad will open the 道具 menu if you possess any items.
+
+The '+' key on the ten-key pad will open the 魔法 menu if you know any spells.
+
+The '/' key on the ten-key pad will open the 装備 (equipment) menu.
+
+Combat controls:
+
+Space bar attacks, ten-key '*' changes 行動形態, and ten-key '0' pauses.
+
+
+
+	Bubble Bobble / バブルボブル
+
+Due to a bug, the Bomber, Parasol, and Time Stop items never appear.
+The bug was fixed in the later release(s).
+
+Hold down OPT.1 and type SYBUBBLUN at the title screen to enable a new game mode
+in the configuration. Case matters: you must depress SHIFT or have CAPS enabled.
+You will hear a sound effect if it worked. (This mini-game is pretty difficult
+despite only being 20 stages long; however, normally you would have to finish
+all 100 stages - no small feat - in order to learn the code to enable it.)
+
+
+Advice:
+
+Most of the puzzle stages require advanced bubble riding maneuvers
+or utilizing air channels / solid areas in some non-obvious way.
+
+Round 97: Nudge a lightning bubble to the right after it first descends and
+it will take a different path. It is also possible to have a second player
+boost you up through the solid part, but it's tricky.
+
+Round S13: Release a bubble deep within the solid part on the right such that
+it will float all the way up. You must ascend quickly through the center part
+in order to catch the bubble and ride it into the space at the upper right.
+
+Round S18: In keeping with the way you are expected to abuse game mechanics
+to solve certain puzzles, it's worth mentioning that you can sometimes use
+the stun effect to cross pits or enter solid areas. Riding bubbles is likely
+going to be easier though.
+
+
+Omake:
+
+To create a music disk, put Bubble Bobble into A: and a formatted disk into B:
+then type the following.
+
+A:\OMAKE\GMTRNS
+
+To listen to music, type the following. The commands are not case sensitive.
+
+B:
+CD \         (not necessary if you haven't changed the current directory for B:)
+GMD68K -P270 (or -P64 if you don't have enough free RAM)
+
+Type the following command to play a piece of music:
+
+GMP -I FILE
+
+...where FILE is the name of a music file with a .GMD extension. It is not
+necessary to type the extension. The -I option is recommended because it
+initializes everything before playing, but it is not critical.
+
+When you have had enough, "GMP -F" will fade out the music.
+
+
+
+	*Cotton / Fantastic Night Dreams Cotton / コットン
+
+This game is HDD installable. The installer is named 'cotins.r' and it requires
+two arguments: the drive letters of the drives containing Disk A and Disk B.
+The game must be booted from Disk A even when installed.
+
+Press Space / XF1 / Button A to insert credits, or Left / Right for options.
+
+The seven keyboard LEDs light up in time with the music.
+
+Additional RAM (notionally 4 MB) will be used to reduce disk loading.
+
+The difficulty levels, from easiest to hardest, are as follows.
+
+EASY / NORMAL / HARD / HARDEST / YOU DO!
+
+
+The following notes are specific to the Beep re-release in 2019.
+
+The original BEEP ED. mode replaces the EASY difficulty.
+
+This edition lacks an installer; you must copy the contents of both disks
+to a directory on your hard drive using CLI commands, such as the following:
+
+COPYALL X:\*.* Y:\COTTON68
+
+In the above example, X is the FDD drive letter, Y is the HDD drive letter,
+and COTTON68 is the name of the installation directory. To play the game,
+first "CD" to the installation drive/directory and then execute 'cot.r'
+('bootcot.r' also seems to work; the manual is discrepant about this.)
+
+Launching the game from within Human68k may require additional RAM.
+
+
+
+	Daimakaimura / 大魔界村
+
+The HSP versions of Mode 3 and Mode 4 use a vertical rate closer to 60 Hz
+and are therefore approximately 9% faster than their non-HSP versions.
+
+This game is HDD installable. Copy the contents of both disks into a directory
+named 'daimakai' (not case sensitive) in the root of the HDD. You will still
+need to boot from the System Disk.
+
+This game supports GM MIDI.
+
+The manual recommends a clock rate of 16 MHz or better.
+
+Default keyboard controls:
+
+U: Up
+H: Left
+K: Right
+M: Down
+
+XF1: Jump
+XF2: Attack (hold to charge magic, if wearing gold armor)
+
+
+
+	*Death Brade: Mutant Fighters / デス　ブレイド / デスブレイド
+
+This game is HDD installable. The staff roll displays character animations only
+when playing from a hard drive.
+
+Two-player simultaneous play is only available in the competitive mode.
+
+Keyboard controls:
+
+        1P   2P
+Up      U    8
+Down    M    2
+Left    H    4
+Right   K    6
+Kowaza  XF1  Left   (小技)
+Oowaza  XF2  Right  (大技)
+
+F1: Continue
+F3: Insert coin
+F5: Configuration (only available at the Game Select screen)
+
+HDD installation:
+
+Installation requires that every file from every disk be copied into a directory
+named 'DEATH' located in the root directory of the HDD.
+
+Start by booting Human. Next, insert the first disk into any drive and then
+enter the following commands.
+
+MKDIR       H:\DEATH   (where H: is the drive letter of the destination HDD)
+COPY F:\*.* H:\DEATH   (where F: is the drive letter of the source FDD)
+
+Repeat the last command for each disk in the set.
+
+You will still need to boot the Program Disk in order to play from a hard drive.
+
+
+
+	Death Bringer / DEATH-BRINGER / デス・ブリンガー
+
+Boot Disk B in Drive 0 to create a user disk. You could use the original just to
+start the game, but it is not writable and therefore the game cannot be saved.
+
+A writable copy of Disk B seems to be functional as a user disk,
+albeit with the main character's name replaced with 6 stars.
+
+Mixing disks from different versions of the game will cause crashes.
+
+For Music Mode, boot Disk A and hold down all four of the arrow keys plus
+OPT.1 and OPT.2 while the Renovation logo fades out.
+
+Keyboard controls:
+
+Confirm: X  Space  OPT.1
+ Cancel: Z XF2 XF3 OPT.2
+  Debug:    Return
+
+Both the arrow keys and ten-key pad can be used for movement.
+
+Camp menu:
+
+1: Display Status	１：状態の表示（じょうたいのひょうじ）
+2: Equipment		２：装備（そうび）
+3: Use			３：使用（しよう）
+4: Change Formation	４：隊列の変更（たいれつのへんこう）
+5: Rest			５：休息（きゅうそく）
+6: Dismiss Member	６：仲間を外す（なかまをはずす）
+
+Combat menu:
+
+Offense  Magic  Defense   攻勢（こうせい）　　魔法（まほう）　防御（ぼうぎょ）
+Retreat  Change Weapon    退却（たいきゃく）　武器交換（ぶきこうかん）
+
+XM6: This game moves quicker when using a higher CPU clock rate.
+
+
+
+	Detana!! TwinBee / 出たな!! ツインビー
+
+F2 will switch to a 15 kHz screen mode. F1 will return to 31 kHz mode.
+
+Press F3 to access the Configuration Screen. Press left or right while EXIT
+is selected to leave.
+
+The manual recommends running at a 10 MHz clock rate.
+
+If MIDI support is detected, you must select the type of audio to use:
+
+1:   FM (OPM)
+2: MIDI (LA)
+3: MIDI (GS)
+
+Keyboard controls:
+
+    U L R D Shot Missile
+    ------- --- ---
+1P: 8 4 6 2 XF4 XF5 (TwinBee)
+2P: T F H V XF1 XF2  (WinBee)
+
+
+
+	*Dino Land
+
+Hold down 登録 as the game boots to use MIDI (LA?).
+
+
+
+	*Dungeon Master
+
+This game has an option to format a disk to be used as a user disk,
+but any standard-format blank disk seems to function correctly.
+
+Keyboard controls:
+
+Turn left:  1
+Forward:    2  Up
+Turn right: 3
+Left:       0  Left
+Backward:   ,  Down
+Right:      .  Right
+
+The above controls only apply to the ten-key pad and cursor keys.
+
+F1 - F4 will toggle the character inspection screen for each party member.
+ENTER / Return will confirm certain dialogs.
+
+
+
+	Emerald Dragon / エメラルドドラゴン
+
+Hold down OPT.2 during the early part of the GLODIA logo to access Music Mode.
+
+
+
+	Étoile Princesse / Etoile Princesse / エトワールプリンセス / エトワール・プリンセス / エト・プリ
+
+Keyboard controls:
+
+Attack: XF1 X Space 
+  Jump: XF2 Z
+  Menu: SHIFT
+
+Any simultaneous combination of Jump and Attack inputs will also open the menu.
+
+Press and hold Jump while in mid-air to run (requires an item).
+
+A simple music piece not found in the sound test will play at the very end
+of the game (おしまい) after a few seconds.
+
+
+
+	Fantasm Soldier Valis II, The / Mugen Senshi Valis II / 夢幻戦士ヴァリスⅡ
+
+Please play this game using a copy of Disk B rather than the original.
+
+Press F5 during the Renovation logo or intro for a music mode wherein
+you can play the selected song with Space, Return, or Enter.
+
+Press Return to skip the intro.
+
+The main menu has two options:
+ イニシャルスタート (Initial Start)
+  ロードスタート (Load Start)
+
+Between stages, the save menu appears:
+ データをセーブする。 (Save data.)
+ データをセーブしない。 (Do not save data.)
+
+Menus cannot be canceled; any recognized input will confirm the selection.
+
+Keyboard controls:
+
+Attack/Confirm: X or Space
+Special/Cancel: Z or Return
+
+Press F1 to enter the selection mode. Pressing any combination
+of Down and Cancel - with the joystick and/or keyboard - also works.
+
+Press HELP during the action parts of the game to toggle the 15 kHz mode.
+The vertical refresh will be 6 Hz faster, but the entire screen won't fit.
+
+The ten-key diagonals (1, 3, 7, 9) are functional.
+
+During the earlier visual scenes, holding down Confirm will increase printing
+speed temporarily. You may skip the visual scene by pressing Cancel or F5.
+
+The keyboard controls for the later visual scenes are different: only Space
+works to speed-up printing, and skipping is accomplished with Return or Enter.
+The joystick controls function normally, however.
+
+Specials:
+
+DIFF temporarily freezes monsters.
+INTEGRAL grants temporary invincibility.
+EVADE reduces the number of enemies you encounter for a while.
+CLASH damages on-screen enemies.
+
+
+
+	Fantasy Zone / ファンタジーゾーン
+
+Press 登録 before starting a game to enter (or exit) the configuration menu.
+
+HELP will switch between 320x448 and 640x448 (24 kHz) once the game has loaded.
+
+A blank disk in Drive 1 will function as a user disk, which is optional.
+
+
+
+	Far Side Moon: The Earth Self-Defense Force / 地球防衛軍Ⅱ
+
+The earliest versions of the Game Disk Master may contain a boot sector virus.
+Booting from this disk, or a user disk derived from it, will infect your SRAM.
+While this disk is not booted from when playing the game, forgetting to remove
+it can cause it to infect your system the next time it starts up.
+
+The virus-infected image has historically not been in common circulation.
+XM6 Pro-68k is known to be immune if up-to-date.
+
+
+
+	*Full Throttle
+
+Fixed versions of this game load much faster and put significantly less strain
+on the drive mechanics.
+
+
+
+	Fushigi no Umi no Nadia / ふしぎの海のナディア
+
+This game can utilize up to four drives. It is also HDD installable (Disk C).
+
+
+
+	FZ Senki Axis / FZ戦記アクシス
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+
+
+	Garou Densetsu Special / 餓狼伝説スペシャル
+
+Hold SHIFT while booting Disk A to install to a hard drive. More detailed
+instructions are below. This game is nigh unplayable until it is installed.
+
+HDD installation (XM6):
+
+Tools > Make a New SASI Fixed Disk
+Set the capacity to 20 MB or more
+Ensure "Do Logical Formatting" is enabled
+Click OK
+Tools > Options > SASI
+Set number of drives to 1
+Click the first item in the list and select the HDD image file you just created
+Click OK
+File > Reset (or Alt-R)
+
+HDD installation (general):
+
+Insert Disk A into Drive 0 and hold SHIFT until the HDD installer appears.
+You can use the mouse or keyboard (the space bar substitutes for mouse clicks).
+
+Select the line that looks similar to this: ○　Ｃ：　ＳＡＳＩ　ＨＤＤ　20636672 bytes.
+If there is an X then that partition is not suitable for whatever reason.
+If you don't see anything then the HDD was not detected.
+
+Select はい (the top option) when you see よろしいですか？
+Next you will see something like "C:\GAROU_SP" and このディレクトリにインストールします.
+Select はい (the top option) and you will see インストールを開始します.
+Select はい (the top option) once more to commence installation.
+Whenever a disk is ejected, insert the next disk in the sequence.
+
+After the last disk is installed, you will see インストールが終了しました
+and a longer message telling you to insert Disk A into Drive 0
+and reset while holding OPT.1 (which is only actually needed
+if you configured your system to boot from a HDD).
+
+
+
+	Gemini Wing / ジェミニウイング
+
+Hold down one of the following keys as the game boots to enable MIDI:
+
+F1: CM-32L or MT-32
+F2: CM-64
+F3: CM-64 + SN-U110-10 (Rock Drums) (expansion card)
+F4: CM-64 + SN-U110-07 (Electric Guitar) (expansion card)
+
+
+
+	Genocide / ジェノサイド
+
+Do not press CPY or Return.
+
+
+
+	Genpei Toumaden / 源平討魔伝（げんぺいとうまでん）
+
+The on-screen indicators are described below.
+
+徳	Virtue (score)
+剣	Sword
+銭	Zeni (currency)
+命	Life (represented by candles)
+
+The numerals are 〇一二三四五六七八九 although they look a little different in-game.
+
+You may also see 毒 pop up, meaning poison.
+
+You will need three special items to complete the game. They have their own
+unique icons that appear in the lower-right part of the screen, except when
+a major enemy's life bar is being displayed.
+
+
+
+	Geograph Seal / ジオグラフシール
+
+A writable copy of the System Disk will function as a user disk (not required).
+
+General controls:
+
+Press Fire and Jump simultaneously to enter the menu.
+This combination will also skip cinematic scenes.
+
+Fire twice in rapid succession to change weapons.
+
+(Both of the above input commands can be disabled in the configuration.)
+
+To change your vertical facing temporarily, hold down both Fire and Jump.
+The directionals will then change your facing, including vertically.
+Once you've started changing your direction, you will stay in this mode
+until you release Jump; you can press or release Fire at will.
+
+Joystick controls:
+
+A: Jump
+B: Fire
+
+Additional buttons can be used to open the menu or pause.
+
+Keyboard controls:
+
+Jump: Z XF2
+Fire: X XF1 Space
+
+SHIFT: Menu
+  ESC: Skip cinematic scenes / pause
+ HELP: Toggle 15 kHz display mode
+
+Debug controls:
+
+ F1: Increase VALCAN  level (Max 4)
+ F2: Increase LASER   level (Max 4)
+ F3: Increase HORMING level (Max 4)
+ F4: Increase RIAT    level (Max 4)
+ BS: Reduce SHIELD
+CLR: STAGE CLEAR
+INS: Maximize SHIELD (while lit)
+
+
+
+	Ginga Eiyuu Densetsu II / 銀河英雄伝説ＩＩ
+
+Create a user disk by booting Disk A and skipping or watching the intro.
+If the post-intro menu fails to appear, update your emulator or disable MIDI.
+
+You can skip the intro entirely by booting Disk B with a user disk in Drive 1.
+
+This game has serious MIDI problems, at least some of which have been found
+to occur on real hardware.
+
+
+
+	Gradius / グラディウス
+
+After Human boots, start the game by double-clicking the GRADIUS.X icon.
+
+Keyboard controls:
+
+BRK: Return to OS
+Space: Choose current menu item / end demonstration
+Up/Down: Change main menu selection
+
+Z: Power Up
+X: Fire Bullet/Laser
+C: Fire Missile
+
+The controls are configurable. In the configuration mode, the first two options
+are for Player 1 and Player 2 respectively. You will be given a chance to assign
+keys for the following: Up, Down, Left, Right, Power Up, Bullet/Laser, Missile.
+
+You can play different musical pieces by pressing keys A through L while the
+game is paused, as long as the ひら (lower-left) and ローマ (above INS) keys are lit.
+This may or may not work if other LEDs are lit or additional keys are depressed.
+It even works when the game is paused in demonstration mode.
+
+When GAME OVER appears, press Up, Down, Left, Right, Fire, Power Up, Up, Down
+to continue the game. The keyboard is more reliable for this, since there will
+not be any indication that it worked.
+
+
+
+	Gradius II: Gofer no Yabou / Vulcan Venture / グラディウスⅡ GOFERの野望
+
+To install to HDD, boot with the disks swapped (B in Drive 0, A in Drive 1).
+
+Hold down the following keys while booting for the listed effect:
+
+F8:  Play from HDD installation (still requires Disk A)
+F9:  Utilize additional RAM (no disk loading during play)
+F10: Arcade version
+
+Keyboard controls:
+
+Z: Missile
+X: Shot
+C: Power Up
+
+F1: 1P start
+F2: 2P start
+F3: Insert coin (arcade)
+F4: Configuration (X68000)
+F5: Sound Mode (X68000)
+F6: Toggle between 31 kHz and 15 kHz display modes
+F7: Continue cancel
+
+You can only continue in Vulcan Venture (USA) mode.
+
+
+
+	Granada / MANEUVER CEPTER Granada / グラナダ
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+Boot Disk III to skip the intro. (Disk II must be in the second drive.)
+
+XM6: Fast Floppy causes a minor graphical glitch during the intro.
+
+
+
+	Ground Master
+
+This game requires a user disk. Select the third option at the main menu and
+then the first option of the submenu. Next insert the Data Disk (B) into the
+first drive and a blank disk into the second drive, then select the first
+option to start the process (or the second option to cancel).
+
+NOTE: There is no reason to ever insert the original Data Disk (B) except
+when creating a user disk. Putting it in Drive 1 will only cause problems.
+
+Once the user disk has been created, you will be instructed to insert it into
+Drive 1 and return the System Disk (A) to Drive 0.
+
+Prior to utilizing the user disk, you must create some playable characters.
+Select the second option at the main menu and then the first option from the
+submenu. (Be aware that the second option will delete characters and the third
+option is for renaming them.)
+
+Next you must type in a name. Then select the character's sex where the first
+option is for male.
+
+The next menu (種族) is for picking a race/tribe:
+
+草原	Grasslands
+森	Forest
+砂漠	Desert
+水辺	Seaside
+洞窟	Cave
+闇	The Dark
+
+You are then given a chance to distribute bonus points by pressing 4 or 6,
+which will affect your occupational choices in yet another menu. If there
+are no viable career opportunities shown, press ESC to try again.
+
+戦士	Warrior
+魔導師	Sorcerer
+僧侶	Priest
+盗賊	Thief
+
+Your character sheet will appear, looking vaguely like this:
+
+ＡＧＥ／年齢
+ＬＶＬ／階梯
+　ＨＰ／体力
+ＳＴＲ／強さ	ＤＥＦ／防御力
+ＤＥＸ／機敏性	ＰＩＥ／信心性
+ＬＵＣ／幸運	ＩＮＴ／知性
+ＥＸＰ／経験値
+　金 (money/gold)
+食糧 (food/rations)
+
+Finally, select the first option to confirm or the second to start over.
+
+With your user disk in the second drive, select the first option at the
+main menu to start the game. You can also learn about spells and such
+in the archives with the final option. Try entering any of the following
+magic words:
+
+PMAGIC PSPELL TOKINO HISTOR MAGICF SORCRE ISYUMA PRIEST KANAMO ISMARS
+
+The in-game menus are interpreted as follows.
+
+メンバーを見る		View member(s)
+　入る／出る		Enter / Exit
+　　　捜す		Search
+　ドアを開ける		Open door
+　　ロードする		Load
+　　セーブする		Save
+隊列を変更する	Change formation
+メニューにもどる		Return to main menu
+
+道具を使う	Use item
+魔法を使う	Use magic
+金を集める	Gather money/gold
+休憩する	Rest
+　離れる	Dismiss
+
+　使う	Use
+捨てる	Discard
+装備する	Equip
+　渡す	Give
+
+Shortcuts:
+
+/	Search
+*	View member(s)
+=	Change formation
+
+
+
+	Human68k Version 3.02
+
+Hold SHIFT while booting to edit CONFIG.SYS
+
+Hold OPT.1 and press OPT.2 to open/close the calculator.
+
+Hold CTRL and OPT.1 and then press DEL to reboot. (Works in most games as well.)
+
+Tab completion for file names is available, even if you haven't typed anything.
+
+
+
+	IPL ROM
+
+12 MB of RAM can cause the IPL routine to crash on startup due to a bug.
+The crash should not occur if there is a disk in any drive.
+
+The technical explanation is that it tries to dereference the pointer stored
+at SRAM[$C] and, if successful, jumps to the address obtained. On most systems,
+either an anticipated bus error occurs or it starts executing the SCSI ROM.
+With the maximum 12 MB of RAM installed, the default pointer ($BFFFFC) will
+no longer cause a bus error and the uninitialized value is jumped to.
+
+
+
+	Ishin no Arashi / 維新の嵐
+
+The opening can be skipped entirely by booting with Disk C in the second drive.
+
+The main menu is interpreted as follows.
+
+新しくゲームを始める	Start a new game
+途中からゲームを始める	Resume a saved game (requires a data disk)
+データ・ディスク作成	Create a data disk (used for saving the game)
+維新サウンドモード	Listen to music and sampled sounds
+
+To create a data disk, select the third option and insert a blank disk into the
+second drive when prompted. The contents will be destroyed. Upon completion,
+you will be prompted to reinsert Disk C.
+
+
+
+	Knight Arms: The Hyblid Framer / KnightArms / ハイブリッドフレーマー ナイトアームズ
+
+Keyboard controls:
+
+SPACE: Attack
+SHIFT: Turn (hold down while pressing one of eight directions)
+BREAK: Self-destruct
+
+Joystick controls:
+
+A: Attack
+B: Turn (with a direction)
+
+Note that the valid directions for turning vary depending upon the orientation.
+
+An analog CYBERSTICK can be used if first enabled in the configuration.
+Its throttle can perform a few turning actions in the side-scrolling sections.
+
+Items:
+
+W: Wide Shot
+H: Homing Shot
+B: Power Bomb
+P: Protector
+R: Repair
+SR: SND-R Side Neck Defense Unit - Right (Cindy)
+SL: SND-L Side Neck Defense Unit - Left (Sandra)
+K: KSND Killer Side Neck Defense Unit (Cassandra)
+
+
+
+	*Kon'ya mo Asa made Powerful Mahjong 2 / Konyamo / 今夜も朝までパワフル麻雀２
+
+Boot the User Disk for some hints.
+
+
+
+	*Mahou Daisakusen / Magic Armageddon / 魔法大作戦
+
+Press any direction at the title screen to access the options.
+
+
+
+	Majinkyuu / 魔神宮
+
+A writable copy of Disk B will function as a user disk.
+
+The speed of this game is proportional to CPU power, due to poor programming.
+
+This game takes a very long time to load. Once the title screen appears,
+press ENTER or Return to open the main menu - other keys can cause problems.
+
+You can only create one character - the rest of your party must be recruited.
+Creating a new character is tantamount to starting a new game, except that
+the world will not revert to its initial state. This may make it impossible
+to finish the game if anything of significance was accomplished previously.
+It is therefore safer to always make a new user disk when starting a new game.
+
+Race and blood type together determine your initial stats as well as the range
+of your initial height, weight, HP, and MP. (MP is useless for any character
+you generate since they cannot use magic.)
+
+Height and weight together determine the amount of food you consume. When your
+food supply is exhausted, you will gradually lose HP. Tallness also makes you
+easier to hit: short characters have better evasion.
+
+WARNING: Manually reloading during the game can cause problems because only the
+data concerning your party gets reloaded - any changes made to the world state
+will not be reverted. For example, shops will still be out of stock even though
+the items you purchased are no longer in your inventory.
+
+Stats:
+
+Intelligence: affects susceptibility to attack magic
+Strength:     controls the amount of physical damage dealt
+Dexterity:    is used for calculating initiative, running, and hit probability
+Piety:        might not actually be used for anything
+Charisma:     increases the probability of successfully parleying with monsters
+Luck:         improves hit probability (versus monsters) by a random amount
+
+Menu controls:
+
+Select: ENTER Return
+Cancel: 0 ESC
+Next:   2 Down Space
+Prev:   8 Up
+
+F1, F2, F4, and F5 are quasi-useful in an unintentional way: they will select,
+with a single key press, the next menu item.
+
+Field controls:
+
+Move: 2 4 6 8
+Camp: C -
+
+Almost any other key will cause you to wait for a short period of time.
+
+
+Magic:
+
+Progressive Spells:           (Required Wizard or Priest Magic Level)
+Prefixes: AN  EN  MA  DI  ZA  (n/a)
+Needle:   ANN ENN MAN DIN     (W0)
+Fire:     ANF ENF MAF DIF ZAF (W1)
+Ice:      ANI ENI MAI DII ZAI (W2)
+Wind:     ANW ENW MAW DIW ZAW (W3)
+Earth:    ANE ENE MAE DIE ZAE (W4)
+Breath:   ANB ENB MAB DIB ZAB (P4)
+Thunder:  ANT ENT MAT DIT     (P1, P1, P2, P2)
+Heal:     ANH ENH MAH DIH ZAH (P0, P1, P2, P3, P3)
+Defense:          MAD DID     (P0, P1)
+(Anti-)Magic:     MAM DIM     (P2, P3)
+Sleep:            MAS DIS     (P2, P3)
+Light:    ANL ENL             (P0, W0)
+
+Miscellaneous Spells:
+(Turn) Undead:  MAU (P0)
+(Cure) Poison:  ANP (P0)
+(Cure) Control: ANC (P1)
+(Cure) Death:   AND (P3) (NOTE: 'D' also stands for Defense - see above)
+
+Type the three-letter spell name when prompted. The prefix usually indicates
+the relative strength of the spell. The last character determines the effect.
+
+Only Rondalf and Meistry can use magic. Absent cheating, some of the spells may
+be forever beyond your ken in older versions of the game, due to coding errors.
+
+XM6: Briefly enabling the No-Wait-MPU option makes the game load much faster.
+
+
+
+	Marble Madness / マーブルマッドネス
+
+Keyboard  Left: TFBH XF1/XF2
+Keyboard Right: 8426 XF4/XF5
+
+Press/click the acceleration key/button rapidly to speed up.
+
+
+
+	Märchen Maze / Maerchen Maze / Marchen Maze / メルヘンメイズ
+
+Press SHIFT and HELP after the game loads to access the Game Options screen.
+From there, press F1 to cycle through various arcade-style test modes.
+Press SHIFT and HELP to return to the title screen.
+
+Keyboard controls:
+
+XF2:   Jump
+Space: Bubble (hold to charge)
+登録:   Cycle through 4 display modes
+
+To start the game, press Space for 1P Mode or XF2 for 2P Mode.
+The ten-key diagonals (1, 3, 7, 9) are functional.
+
+XM6: Loading picture corruption may be alleviated by disabling Fast Floppy.
+
+
+
+	Mercury: The Prime Master
+
+Please play this game using a copy of Disk A rather than the original.
+
+The speed of this game is proportional to CPU power.
+
+Keyboard controls:
+
+F1: Action Menu
+F2: Status Menu
+F3: Item   Menu
+F4: Magic  Menu
+F5: Save   Menu
+F6: Load   Menu
+F7: System Menu
+
+F9:  31 kHz mode (default)
+F10: 24 kHz mode
+
+CPY: Do not press this key
+ESC: Activate menu bar, close menu
+ENTER/Return: Select menu
+Space: Advance text
+
+Upon opening a menu, press the desired number (either key will work).
+
+The ten-key pad is used for movement. There is an option (3) under the
+System Menu to switch between two possible interpretations of the keys.
+The alternate mode is more convenient albeit potentially confusing.
+
+Option 2 under the Action Menu will toggle the auto-battle option.
+It can also be activated during a battle by selecting 6 (自動戦闘へ).
+
+This game can also be controlled with the mouse.
+
+
+
+	Mid-Garts / MID-GARTS GOLD / ミッド・ガルツ
+
+Boot Disk I to watch the intro or Disk II to skip it. In either case,
+Disk II eventually needs to be inserted into Drive 0 to play the game.
+
+XM6: Fast Floppy causes the intro to move too quickly at points.
+
+
+
+	Morita Shougi II / 森田将棋Ⅱ / 森田将棋２
+
+A user disk is completely optional. There is a user disk creation feature
+but all it does is format the disk and add some directories.
+
+This game supports playing over a modem.
+
+
+
+	*Naious / ナイアス
+
+HELP: Toggle 15 kHz display mode (the entire screen won't fit, however)
+
+
+
+	NEMESIS '90 Kai / NEMESIS '90改 / ネメシス９０改 / ネメシス’９０改 / ＮＥＭＥＳＩＳ '９０改
+
+Quad-channel PCM support requires at least 3 MB of RAM and a 16 MHz clock rate.
+
+Press HELP to toggle the 15 kHz mode.
+
+
+
+	New Zealand Story, The / THE NEWZEALAND STORY / ニュージーランドストーリー
+
+Hold down HELP as the game boots to use the 15 kHz display mode.
+
+The Key Assign mode operates by pressing Return followed by the desired key.
+
+Press '!' (SHIFT-1) to quit the game and return to the main menu.
+This doesn't work if the game is paused.
+
+Fixed versions of this game load much faster and put significantly less strain
+on the drive mechanics.
+
+
+
+	*Niko² / NiKo² / NIKO²～にこにこ～
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+Keyboard controls:
+
+1P 2P
+ 8  R Up
+ 4  D Left
+ 6  G Right
+ 2  V Down
+ ←  Z 壁出す
+ →  X なぐる
+
+Joystick controls:
+
+B: 壁出す
+A: なぐる
+
+
+
+	Nobunaga no Yabou: Bushou Fuuunroku / 信長の野望 武将風雲録
+
+Boot with Disk C in the second drive to skip the intro.
+
+To create a user disk, select the third option on the first menu.
+Next insert a blank disk into the second drive and press Return.
+The user disk can be booted in place of Disk A.
+
+
+
+	Overtake / オーバーテイク
+
+A writable copy of Disk A makes for a convenient user disk, but any writable
+disk that is properly formatted, and has sufficient space, should also work.
+
+Regardless of the configuration, there is no BGM during "Quarify" (qualify),
+which includes the initial lap of a Quick Race.
+
+Press Return to exit from Test Run mode.
+
+World Championship:
+
+Space: PIT IN
+SHIFT+HELP: RETIRE (end race)
+コード入力 on: Display the name of the driver directly in front of you
+
+
+
+	Pac-Mania / PACMANIA / ＰＡＣ・ＭＡＮＩＡ / パックマニア
+
+Hold down HELP as the game boots to use a 15 kHz display mode.
+
+Press F5 at any time to view or change the keyboard controls. To make changes,
+press Return or ENTER followed by the desired key. Press ESC when finished.
+
+To play Pac-Man, first boot Human OS and insert Pac-Mania into either drive.
+Next type A: or B: depending on which drive the disk is in. Finally, enter
+the commands listed below.
+
+CD PACMAN
+PAC.BAT
+
+
+
+	Parodius Da! -Shinwa kara Owarai e- / パロディウスだ!―神話からお笑いへ―
+
+Keyboard controls:
+
+F1: 1P start
+F2: 2P start
+F3: Configuration
+
+C: Capsule Power Up
+X: Shot
+Z: Missile / Bell Power Shot
+
+Joystick controls:
+
+A: Shot & Missile
+B: Capsule Power Up
+B: Bell Power Shot (while holding A)
+
+
+
+	Power League / パワーリーグ
+
+Keyboard controls:
+
+BRK: Return to the main menu - ends a game or discards edits depending on mode
+F1/F9: Next menu item, time out (only at specific points during a game)
+F2/F10: Select menu item, exit from the "select edit team" screen
+
+After selecting teams, moving the joystick will switch the team that bats first,
+except during Pennant Mode.
+
+Most of the game modes are self-explanatory. Winning a match in Pennant Mode
+will earn you a password for the next game in the series (seven total).
+
+
+
+	Reichsritter / ライヒスリッター
+
+Disk A contains the opening. Boot Disk B (with Disk C in Drive 1) to skip it.
+
+Please use a backup copy of Disk C instead of the original.
+
+
+
+	Relics / レリクス
+
+Additional drives can cause problems since the game assumes the RAM disk will
+end up at C: and will blindly write to whatever was assigned that drive letter.
+You probably don't want a bunch of game files written to the root of your HDD.
+
+
+
+	Ring Master I: The Shadow of Filias. / RING MASTER / リングマスター１
+
+This game requires you to create a Character Disk before playing.
+To start the game, insert your Character Disk into the second drive
+and select the main menu's third option. Press 'Y' when prompted.
+
+Whenever you save or load the game, a window with パスワード確認 will appear.
+This is the game's copy protection challenge. The low-contrast booklet
+titled 魔法書 contains thousands of numerical triplets. You will be given
+the first two numbers; you must look up and enter the third one.
+
+The main menu is interpreted as follows.
+
+キャラクター・ディスク作成	Create a Character Disk
+ディスクのバックアップ	Back up disks
+ゲームの開始		Start the game
+終了		Quit
+
+Some of the in-game commands/menus are translated below.
+
+終了	Quit
+ 保存／終了	Save and quit
+ 破棄／終了	Quit without saving
+ 保存／継続	Save and continue
+
+
+Customization:
+
+This game is partially HDD installable. Instructions are in the next paragraph.
+
+Copy the PIC directories to the HDD. Edit AUTOEXEC.BAT and change the PPATH
+environment variable initialization line to include the full path to the
+directory on the HDD. The file AUTOEXEC.HD is a notional example.
+
+Using a RAM disk is also supported, but the procedure is more complicated.
+
+
+
+	*Ryu: [Naki no Ryuu] yori / Ｒｙｕ『哭きの竜』より / Ｒｙｕ【哭きの竜】より
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+
+
+	*Salamander / 沙羅曼蛇 / サラマンダ
+
+Hold down HELP as the game boots to use the 15 kHz display mode.
+
+
+
+	Soft de Hard na Monogatari / ソフトでハードな物語
+
+User disks are sometimes referred to as ディスクＸ in the game's interface.
+
+
+
+	*Silent Möbius: Case:Titanic / Mobius / Moebius / サイレントメビウス
+
+This game is entirely mouse-driven. Either button will speed up text printing.
+
+The map is interactive and affords a fast-travel feature.
+
+Disk inventory:
+
+1. 封印（ふういん）
+2. 胎動（たいどう）
+3. 呪縛（じゅばく）
+4. 彷徨（ほうこう）
+5. 叫喚（きょうかん）
+6. 焦燥（しょうそう）
+7. 鬼哭（きこく）
+
+Characters:
+
+香津美・リキュール (Katsumi Liqueur) Abilities: グラビトン、ブラスター、魔法、結界
+レビア・マーベリック (Lebia Mavelick)  Abilities: グラビトン、ブラスター
+彩弧 由貴 (Saiko, Yuki)        Abilities: グラビトン
+キディ・フェニル (Kiddy Phenil)      Abilities: グラビトン、ブラスター、素手
+闇雲 那魅 (Yamigumo, Nami)     Abilities: 結界、御神刀、お札・若水
+ラリー・シャイアン (Rally Cheyenne)
+
+
+
+	Sol-Feace / ソルフィース
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+
+
+	Star Cruiser / スタークルーザー
+
+Use a blank disk as a user disk.
+
+Keyboard controls:
+
+Confirm: Space Return Enter
+ Cancel: Shift Escape
+
+Press Cancel prior to starting the game for Control Mode and Test Mode.
+
+
+
+	Star Luster / スターラスター
+
+Controls:
+
+SPACE: Fire photons (map mode) or beam (in combat)
+XF2:   Warp (map mode) or accelerate (in combat)
+OPT.1: Manually switch modes
+OPT.2: Pause
+CAPS:  Switch joystick between analog/digital
+
+Joystick controls are similar but depend on the model.
+
+Hold down SHIFT and HELP or OPT.1 and OPT.2 to return to the title screen.
+
+
+
+	Street Fighter II' / ストリートファイターⅡダッシュ
+
+This game will take advantage of extended RAM by pre-loading disks at the start.
+
+The HSP versions of Mode 2 and Mode 3 use a vertical rate closer to 60 Hz
+and are therefore approximately 9% faster than their non-HSP versions.
+Mode 1 is a bit faster than all of them, being nearly 61.5 Hz.
+
+XM6: Set the Main RAM configuration to at least 6 MB to pre-load all disks.
+
+
+
+	Strider Hiryuu / ストライダー飛竜
+
+For HDD installation, create a root subdirectory named STRIDER and copy every
+file from every disk into it. You will still need to boot from the System Disk.
+
+
+
+	Super Street Fighter II: The New Challengers / スーパーストリートファイターⅡ
+
+This game requires a minimum of 4 MB of RAM. Additional RAM will be used to
+pre-load disks prior to starting the game.
+
+This game is HDD installable: run INST.X from the System Disk.
+
+After installation, either boot the System Disk or run AUTOEXEC.BAT
+from the SuperStreetFighter directory. In either case, the System Disk
+must be in Drive 0.
+
+XM6: Set the Main RAM configuration to at least 8 MB to pre-load all disks.
+
+
+
+	Super Real Mahjong PIV / スーパーリアル麻雀ＰＩＶ
+
+This game can utilize up to four drives. It is also HDD installable.
+
+Press 登録 to enter Config Mode, F1 to insert a coin, F2 for the story mode,
+and F5 for a versus mode. There are many additional keyboard/mouse controls.
+
+The README notes that 2 MB of memory is barely enough when running from HDD.
+You may need to reconfigure your system to free up enough RAM in that case.
+It also implies that a 16 MHz or higher clock rate yields better results.
+
+HDD Installation:
+
+Insert the System Disk into Drive 0 and execute INSTALL.X with the destination
+drive letter as an argument. You can also add the argument "-d" after the drive
+letter to perform a "decoded" installation. The latter requires roughly 13 MB
+whereas a standard installation only consumes around 9 MB.
+
+The installer will create a subdirectory named SRMP4 to hold all the files.
+The subdirectory will be created at the current directory of the hard drive,
+so use the CD command to check that the destination directory is acceptable.
+
+It is very important that the current drive is set to be Drive 0 before
+launching the installer. (Type the floppy drive letter followed by a colon.)
+
+The installer will print out some information and then pause. Press any key
+to begin. You will be asked to insert every disk into Drive 0 sequentially.
+If you did not set the current drive correctly, you will run into problems.
+
+To run from a HDD, insert the System Disk into Drive 0 and then execute the
+commands listed below.
+
+X:         (where X is the letter of the drive where the installation resides)
+CD SRMP4
+SRMP4.BAT
+
+
+
+	Sword of Legend Lenam / レナム
+
+This game writes to the System Disk on every boot. You should make a copy
+prior to running it and only use the backup copy. (It is not copy protected.)
+The Opening Disk should also be copied, although it is less vulnerable.
+
+
+
+	Syvalion / サイバリオン
+
+Hold down the HELP key while booting to select the 31 kHz display mode.
+
+
+
+	Tenkatouitsu / Tenka Touitsu / 天下統一
+
+A writable copy of Game Disk 2 is effectively a user disk.
+
+Create a user disk by clicking the icon in the lower corner at the main menu.
+Insert Game Disk 2 into Drive 0 and a blank disk into Drive 1. You will then
+be asked to confirm by clicking 是 (to the left) or cancel by clicking 否.
+You will then be given a warning that the disk in Drive 1 will be formatted.
+Click 是 once more to start the process. Afterwards, you will be prompted
+to reinsert Game Disk 1 into Drive 0 and click the mouse to continue.
+
+
+
+	Thunder Blade / サンダーブレード
+
+Press F5 to enter the configuration mode.
+
+
+
+	Video Game Anthology Vol. 2: Atomic Runner Chelnov / 戦う人間発電所 チェルノブ
+
+The HELP key switches between 15 kHz (512x480) and 31 kHz (512x512).
+
+F1: Configuration mode
+F6: Insert coin
+F8: One-player game
+F9: Two-player game
+
+A joystick with more than two buttons is recommended. You may need to adjust
+the configuration in order to take advantage of the additional buttons.
+
+
+
+	*Video Game Anthology Vol. 6: Buta-san / Butasan / ぶたさん
+
+Press HELP to toggle the 15 kHz mode.
+
+F1: Configuration mode
+F6: Insert coin
+F7: Insert coin
+F8: One-player game
+F9: Two-player game (simultaneous)
+
+
+
+	Video Game Anthology Vol. 7: Dragon Buster / DRAGONBUSTER / ドラゴンバスター
+
+The HELP key cycles through the display modes:
+
+288x448 (default)
+576x448 (nominally 24 kHz)
+512x448
+
+
+
+	Video Game Anthology Vol. 9: Argus no Senshi / Argos / Rygar / アルゴスの戦士
+
+Keyboard controls:
+
+F1: Configuration
+F6: Insert coin
+F7: Insert coin
+F8: One-player game
+F9: Two-player game
+
+Attack: XF1 XF3 XF5 Space
+  Jump: XF2 XF4
+  Move: Ten-Key or Arrows
+
+XM6: You may need to enable the No-Wait-MPU option in order to start the game.
+
+To play a presumably enhanced version of Star Force, insert Volume 3 into the
+second drive before booting Volume 9. You will then see a text menu. The first
+option is Star Force, the second is Argus no Senshi.
+
+
+
+	*Video Game Anthology Vol. 13: Baraduke / バラデューク
+
+Keyboard controls:
+
+F1: Configuration mode
+F2: Test mode (press again to exit)
+F6: Insert coin
+F7: Insert coin
+F8: One-player game
+F9: Two-player game
+
+The space bar and XF1 through XF5 can be all used to attack.
+The arrow keys can be used for movement.
+
+The HELP key cycles through the display modes:
+
+288x448, 31.05 kHz, 59.59 Hz (default)
+288x448, 31.50 kHz, 60.46 Hz
+512x448, 15.98 kHz, 61.22 Hz
+576x224, 15.98 kHz, 61.23 Hz
+576x448, 24.98 kHz, 53.49 Hz
+
+Hint: The boss of Floor 48 is killable; the method is a bit unconventional.
+
+
+
+	Xenon 2: Megablast
+
+Hold down 登録 as the game boots to use MIDI (LA).
+
+The HELP key cycles the display between 31 kHz (default), 25 kHz, and 15 kHz.
+
+The "special" game mode has different music and includes an ending of sorts.
+
+
+
+	*Y2 / Ｙ２
+
+There are no known-good disk images of this game.
+
+There are no properly fixed disk images of this game.
+
+
+
+	Yami no Ketsuzoku / The Predestined Homicides #1 / 闇の血族
+
+Hold down F1 or F2 while booting to enable MIDI (MT-32 or CM-64 respectively).
+
+
+
+	Ys / Ancient Ys Vanished / イース
+
+Keyboard controls:
+
+F1:     Load
+F5:     Save
+Space:  Use item, cancel
+ENTER:  Status, confirm
+Return: Status, confirm
+R:      Read a book (requires レアの眼鏡)
+
+Both the arrow keys and ten-key pad can be used for movement, which is unusual.
+
+Advice:
+
+You cannot return from the tower. Make sure you have the best equipment
+money can buy, because your silver items will be confiscated temporarily.
+
+Partway through the tower, you will need to break a pillar using the hammer
+in order to advance. It's on the way to the room ルタ＝ジェンマ relocated to after
+being broken out of custody.
+
+If you receive the message 邪悪な力で封じこめられている when attempting to open the door
+in ラドの塔, it's because アドル does not currently have the EVIL-RING equipped.
+After this subplot concludes, you should go back and speak with ルタ＝ジェンマ.
+
+Silver equipment is much more effective in the final battle against ダルク＝ファクト.
+
+XM6: If the game crashes, try using a higher CPU clock rate.
+
+
+
+	Ys: Wanderers from Ys / Ys III / Ys-III / ワンダラーズ フロム イース
+
+Hold F10 while booting from the Scenario Disk to create a user disk and assign
+the difficulty. A direct copy of the Scenario Disk itself seems serviceable
+as a user disk set to normal difficulty.
+
+Hold F9 while starting the game (i.e. immediately after exiting the intro)
+to begin a new game. Normally it will automatically load the last saved game.
+
+CAPS will toggle the text printing speed.
+
+F1 opens the Load Menu, F4 the Save Menu.
+
+Press 'I' for inventory, 'S' for status.
+
+ENTER, XF1, and Return will all exit the inventory.
+
+Press SHIFT (either key) to use the equipped item.
+
+Space has the same functions as XF2, including switching inventory views.
+
+Any of the above keys besides CAPS and F9/F10 will advance text, interestingly.
+
+There are no known properly fixed disk images of this game. The problem won't
+necessarily occur, however. If it does, you won't be able to get the 火竜の守り
+from 火龍ギルン and will be stuck in the lava area. Starting over or modifying
+the game state are the only options in that eventuality.
+
+
+
+	Zan: Kagerou no Toki / 斬【ＺＡＮ】 ～陽炎の時代～（かげろうのとき）
+
+Boot the Scenario Disk to make a copy, thereby keeping the original pristine.
+
+
+
