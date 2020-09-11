@@ -1,0 +1,97 @@
+Traducción/parche NO OFICIAL a español del emulador XM6-Pro 68k por Carlos Romero
+
+COMO INSTALAR TODO ESTO
+=======================
+
+Para usar este emulador y a continuación traducirlo (si asi lo quieres):
+
+1.- Descomprimir el fichero de release el cual creará 3 directorios:
+
+    A.- "ORIGINAL" (que contiene dos ficheros, uno con el emulador y otro con las roms y dll necesarias)
+
+    B.- "EXE PREPARCHEADO" (El exe principal del emulador ya traducido, ayuda y textos auxiliares)
+
+    C.- "IPS OPCIONAL" (Contiene un ips para parchear tu versión preexistente si no te fias)
+
+2.- Descomprimir LOS TRES FICHEROS de la carpeta "ORIGINAL" en el mismo directorio donde quieras instalar
+    el emulador, contienen respectivamente:
+     
+     El Emulador 
+     Las ROMS/BIOS
+     Sistema operativo HUMAN OS 3.02
+
+3.- Copiar el .exe de la carpeta "PREPARCHEADO" en el mismo directorio y listo.
+
+4.- El S.O. HUMAN.SYS se carga desde la imagen de disquete incluida en formato XDF.
+
+
+
+BUGS Y LIMITACIONES CONOCIDAS
+=============================
+
+1.- Las notas del software (Peruse) de x-68000 está en inglés porque se actualizan con mucha frecuencia y 
+    en él se indica especificamente que no se modifique.
+
+2.- El manual está traducido originalmente con un traductor automático, aunque lo he corregido es posible 
+    que contenga erratas (por razones de salud no he tenido tiempo de depurarlo)
+
+3.- Algunos atajos de teclado están cambiados para adaptarse al español y es posible que se me hayan pasado
+    un par de ellos en el manual.
+   
+4.- El emulador está traducido al 99% (hay un par de partes en el debugger y en el sistema de trucos que 
+    no he cambiado aún o las he dejado tal cual para su mejor comprensión.
+
+
+NOTAS IMPORTANTES
+=================
+
+1.- Esta traducción NO ES OFICIAL es decir, el autor no está relacionado con esto de ninguna forma (he 
+    intentado contactarle pero no he obtenido respuesta, probablemente su dirección email sea obsoleta).
+
+2.- NO SOY PROPIETARIO del código original ESTO ES UNA TRADUCCION NO OFICIAL.
+
+3.- Las ROMS y el S.O. son de dominio público (PD) y autorizada su distribución sin ánimo de lucro por 
+    sus respectivos fabricantes.
+
+4.- El código original pertenece a:
+    
+    XM6/XM6-G: P.I. y GIMONS
+    
+    Librerias extra: CISC y Neill Cornett.
+
+5.- Incluyo en este repositorio los ficheros originales públicos de la web del autor sin modificar
+
+6.- Está previsto traducir también XM6g de forma expresamente autorizada por GIMONS pero no puedo 
+    poner a disposición del público ni ceder el código fuente original, como este emulador es un 
+    fork basado en el trabajo original de GIMONS se aplica la misma restricción con independencia
+    de lo que el autor del fork considere.
+
+
+RECURSOS EXTRAS
+===============
+
+1.- WEB ORIGINAL DEL EMULADOR Y DESCARGAS OFICIALES:
+
+https://mijet.eludevisibility.org/XM6%20Pro-68k/XM6%20Pro-68k.html
+
+2.- SISTEMA OPERATIVO HUMAN OS 3.02 (necesario para arrancar, equivalente a MS-DOS):
+
+http://retropc.net/x68000/software/sharp/human302/
+
+3.- SXWIN (Equivalente a Windows para X-68000:
+
+http://retropc.net/x68000/software/sharp/sxwindow/
+
+4.- SDK y otros:
+
+http://retropc.net/x68000/software/sharp/
+
+5.- Mi canal de youtube (subiré pronto tutoriales y hay otros proyectos interesantes)
+
+http://youtube.com/c/CarlosRmsx
+
+CONTACTO
+========
+
+Twitter: https://twitter.com/Dalekamistoso
+Youtube: http://youtube.com/c/CarlosRmsx
