@@ -15,8 +15,8 @@ Incluyo en este repositorio los ficheros originales públicos de la web del auto
 
 La traducción vienen en dos ficheros:
 
-Un parche IPS para aplicar sobre la versión original (usa tu parcheador como Lunar IPS sobre el xm6.exe y listo)
-El ejecutable ya directamente modificado (simplemente sobreescribe)
+Para parchear el exe original: Un parche IPS
+Para sobreescribir directamente: El ejecutable ya modificado ( sobreescribe o úsalo en el mismo directorio)
 
 Está previsto traducir también XM6g de forma expresamente autorizada por GIMONS pero no puedo poner a disposición del público
 ni ceder el código fuente original, como este emulador es un fork basado en el trabajo original del GIMONS se aplica la misma
